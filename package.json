@@ -1,0 +1,23 @@
+{
+  "name": "tiy-assignments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "BasicCalculator.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffworley/TIY-Assignments.git"
+  },
+  "author": "jeffworley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeffworley/TIY-Assignments/issues"
+  },
+  "homepage": "https://github.com/jeffworley/TIY-Assignments#readme",
+  "dependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.3.0"
+  }
+}
