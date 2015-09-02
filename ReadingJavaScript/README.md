@@ -193,6 +193,72 @@ tops *= 4; //Then we say mulitply the current value of 3 from tops by 4 and then
 tops /= 3; //Now we divide the current value of 12 from tops by 3 and then make the result the new value of tops.  The value of tops is now 4.//
 ```
 
+### Logical Operators:
+
+#### Logical AND (&&):
+The logical AND operator is used to evaluate multiple expressions.  For the sake of learning this we will discuss it taking in two expressions.  Each expression is an operand on either side of our logical AND operator.  When executing this statement JavaScript will evaluate the expression on the left to determine it's Boolean value (true or false).  If it evaluates to true, then it will proceed to evaluating the expression on the right for it's Boolean value.  If that evaluates to true then it will execute whatever code you have placed in the curly braces.  If either is false it will skip past that code on to the next thing.
+###### A Few Examples:
+```
+var A = "A", B = "B";
+if (A === "A" &&& B === "B") { //This reads if variable A is equal to string A AND variable B is equal to string B then do...
+  console.log("We received two trues!");
+}
+
+var carmpg = 28, hybridmpg = 40;
+if (carmpg > hybridmpg &&& hybridmpg > 36) {
+  console.log("You should have bought a hybrid!");
+}
+```
+
+#### Logical OR (||):
+The logical OR operator is used to evaluate multiple expressions.  Just like with the logical AND operator we are going to talk about how this works with two expressions.  Each expression is an operand on either side of our logical OR operator.  When executing this statement JavaScript will evaluate the expression on the left to determine it's Boolean value (true or false).  It will then proceed to evaluating the expression on the right for it's Boolean value.  If either of the two expressions evaluates to `true` then it will run the code inside of the curly braces.  If both expressions evaluate to `false` then it will skip past that code and on to the next thing.
+###### A Few Examples:
+```
+var A = "A", B = "B";
+if (A === "A" || B === "b") { //This reads if variable A is equal to string A OR variable B is equal to string b then do...
+  console.log("At least one expression is right!");
+}
+
+var carmpg = 28, hybridmpg = 40;
+if (carmpg > hybridmpg || carmpg > 30) {
+  console.log("See, you should have bought a hybrid!")
+}
+```
+
+#### Logical NOT (!):
+The logical NOT operator is used to get the opposite Boolean value than would have been returned from the expression without it.  We would use if we were trying to determine which of something doesn't fit our criteria so that we could eliminate it from consideration.
+###### A Few Examples:
+```
+var carmpg = 28, truckmpg = 14, hybridmpg = 40, planempg = 5;
+if (carmpg !> 36) { //This would read if the value of carmpg (28) is NOT greater than the numeral 36, then do...
+  console.log("Why do you still have that car?!?!");
+}
+
+if (truckmpg !== planempg) {
+  console.log("But they are both big!");
+}
+```
+
+### Comma Operator:
+The comma operator evaluates each of it's operands from left to right and then returns the value of the last operand.  These are most commonly used when needing to give more than one expression in a location that is set up to recieve only one.
+###### A Few Examples:
+```
+function someFunction() {
+  var p = 2;
+  console.log(p += 2, p)
+} //This let's console.log assign the value of numeral 2 to the already existing value of numeral 2 in p and then print out the new value of p//
+```
+
+### typeof Operator:
+The typeof operator evaluates an unevaluated operand and returns a string indicating the type.
+###### A Few Examples:
+```
+typeof true //this would return 'boolean'
+typeof "jelly" //this would return 'string'
+typeof 7.65487 //this would return 'number'
+typeof bareword //this would return 'undefined'.  This is because it thinks we set up the bareword as a variable or object somewhere else but can't find it.
+```
+
 ### Built-in Constants:
 
 #### Undefined:
@@ -217,4 +283,31 @@ Infinity is also a property of the global object so we can access it from anywhe
 72 / 0 //This would result in Infinity.  We cannot know how many times 0 trully goes into 72 and therefore it is infinite.//
 3 * Infinity //Because Infinity is an impercise measurement, when we multiply 3 by it we get a result of Infinity.  The largest possible number.//
 ```
+
+### Function:
+A function is a reusable block of code created to make something happen.  That can be behind the scenes or via a visual prompt or printout to the user.  Every function created with a function declaration (the code to set one up explicitly) is a function object and therefore gets access to the properties, methods, and behaviors of function objects.  When creating a function declaration you need three parts: the function name, the parameters you want to pass in if any and the statements you want to be executed when you call the function.  Below I will show you what this looks like.
+###### A Few Examples:
+Your basic function structure:
+```
+function name (parameters) {
+  statements you want to execute
+} close function
+```
+Your basic function invocation:
+```
+functionname(parameters if any);close statement
+```
+Real examples:
+```
+function printAbc () {
+  var abcContainer = [A, B, C];
+  for (var i = 0; i <= abcContainer.length; i++) {
+    console.log(abcContainer[i]);
+  }
+};
+
+printAbc();
+```
+The above would read that when I invoke the printAbc function I want to create a temporary variable i and assign it a value of numeral 0.  If the value of i is less than or equal to the length of the abcContainer array, then I want the temporary variable i to increase it's position/value by 1.  Then print out the current value for position i.  If the value of i is not less than or equal to the length of the abcContainer array, then stop printing out.
+
 
