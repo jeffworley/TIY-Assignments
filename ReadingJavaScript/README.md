@@ -239,7 +239,7 @@ if (truckmpg !== planempg) {
 }
 ```
 
-### Comma Operator:
+### Comma Operator (,):
 The comma operator evaluates each of it's operands from left to right and then returns the value of the last operand.  These are most commonly used when needing to give more than one expression in a location that is set up to recieve only one.
 ###### A Few Examples:
 ```
