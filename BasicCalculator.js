@@ -18,6 +18,61 @@ console.assert(add(0, 7) === 7);
 console.assert(add(0, 8) === 8);
 console.assert(add(0, 9) === 9);
 
+console.assert(add(1, 0) === 1);
+console.assert(add(1, 1) === 2);
+console.assert(add(1, 2) === 3);
+console.assert(add(1, 3) === 4);
+console.assert(add(1, 4) === 5);
+console.assert(add(1, 5) === 6);
+console.assert(add(1, 6) === 7);
+console.assert(add(1, 7) === 8);
+console.assert(add(1, 8) === 9);
+
+console.assert(add(2, -2) === 0);
+console.assert(add(2, -1) === 1);
+console.assert(add(2, 0) === 2);
+console.assert(add(2, 1) === 3);
+console.assert(add(2, 2) === 4);
+console.assert(add(2, 3) === 5);
+console.assert(add(2, 4) === 6);
+console.assert(add(2, 5) === 7);
+console.assert(add(2, 6) === 8);
+console.assert(add(2, 7) === 9);
+
+console.assert(add(3, -3) === 0);
+console.assert(add(3, -2) === 1);
+console.assert(add(3, -1) === 2);
+console.assert(add(3, 0) === 3);
+console.assert(add(3, 1) === 4);
+console.assert(add(3, 2) === 5);
+console.assert(add(3, 3) === 6);
+console.assert(add(3, 4) === 7);
+console.assert(add(3, 5) === 8);
+console.assert(add(3, 6) === 9);
+
+console.assert(add(4, -4) === 0);
+console.assert(add(4, -3) === 1);
+console.assert(add(4, -2) === 2);
+console.assert(add(4, -1) === 3);
+console.assert(add(4, 0) === 4);
+console.assert(add(4, 1) === 5);
+console.assert(add(4, 2) === 6);
+console.assert(add(4, 3) === 7);
+console.assert(add(4, 4) === 8);
+console.assert(add(4, 5) === 9);
+
+console.assert(add(5, -5) === 0);
+console.assert(add(5, -4) === 1);
+console.assert(add(5, -3) === 2);
+console.assert(add(5, -2) === 3);
+console.assert(add(5, -1) === 4);
+console.assert(add(5, 0) === 5);
+console.assert(add(5, 1) === 6);
+console.assert(add(5, 2) === 7);
+console.assert(add(5, 3) === 8);
+console.assert(add(5, 4) === 9);
+
+
 /**
  * @param {Number} A to be subtracted from by B
  * @param {Number} B to be subtracted from A

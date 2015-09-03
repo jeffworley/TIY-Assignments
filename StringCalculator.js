@@ -17,10 +17,10 @@ test('fromEnglish: "zero" through "nine"', function(){
 }); // END test(fromEnglish)
 
 /**
- * @param {String} word representing an English number
- * @return {Number} value corresponding to `word`
- */
-function fromEnglish(word){
+  * @param {String} word representing an English number
+  * @return {Number} value corresponding to `word`
+  */
+function fromEnglish(word) {
   switch(word) {
     case 'zero':
       return 0;
@@ -53,10 +53,12 @@ function fromEnglish(word){
       return 9;
       break;
   }
-  // Using a switch statement to walk through possible input and avoid writing a ton of if statements.
-}; // END fromEnglish
+};
 
-/*test('plus: ("zero", "zero") through ("zero", "nine")', function(){
+  // Using a switch statement to walk through possible input and avoid writing a ton of if statements.
+// END fromEnglish
+
+test('plus: ("zero", "zero") through ("zero", "nine")', function(){
   expect(plus).to.exist;
   expect(plus("zero", "zero")).to.equal(0);
   expect(plus("zero", "one")).to.equal(1); // change just one thing!
@@ -70,13 +72,13 @@ function fromEnglish(word){
   expect(plus("zero", "nine")).to.equal(9);
   // write more tests like those...
 }); // END test(plus)
-*/
+
 /**
  * @param {String} A representing an English number word
  * @param {String} B representing an English number word
  * @return {Number} the value of `A` added to `B`
  */
-/*function plus(A, B){
+function plus(A, B){
   switch(A, B) {
     case 'zero', 'zero':
       return 0;
@@ -110,63 +112,63 @@ function fromEnglish(word){
       break;
   }
   // write those tests first, please...
-} // END plus
-*/
+}; // END plus
 
-/*test('minus: ("zero", "zero") through ("zero", "nine")', function(){
+
+test('minus: ("zero", "zero") through ("zero", "nine")', function(){
   expect(minus).to.exist;
   expect(minus("zero", "zero")).to.equal(0);
-  expect(minus("zero", "one")).to.equal(-1);
-  expect(minus("zero", "two")).to.equal(-2);
-  expect(minus("zero", "three")).to.equal(-3);
-  expect(minus("zero", "four")).to.equal(-4);
-  expect(minus("zero", "five")).to.equal(-5);
-  expect(minus("zero", "six")).to.equal(-6);
-  expect(minus("zero", "seven")).to.equal(-7);
-  expect(minus("zero", "eight")).to.equal(-8);
-  expect(minus("zero", "nine")).to.equal(-9);
+  expect(minus("zero", "one")).to.equal(1);
+  expect(minus("zero", "two")).to.equal(2);
+  expect(minus("zero", "three")).to.equal(3);
+  expect(minus("zero", "four")).to.equal(4);
+  expect(minus("zero", "five")).to.equal(5);
+  expect(minus("zero", "six")).to.equal(6);
+  expect(minus("zero", "seven")).to.equal(7);
+  expect(minus("zero", "eight")).to.equal(8);
+  expect(minus("zero", "nine")).to.equal(9);
   // etc, etc, etc
 }); // END test(minus)
-*/
+
 /**
  * @param {String} A representing an English number word
  * @param {String} B representing an English number word
  * @return {Number} the value of `A` subtracted by `B`
  */
 
- /*function minus (A, B) {
-   switch(A, B) {
+function minus(A, B) {
+   switch(B, A) {
      case 'zero', 'zero':
       return 0;
       break;
-     case 'one', 'zero':
+     case 'zero', 'one':
       return 1;
       break;
-    case 'two', 'zero':
+    case 'zero', 'two':
       return 2;
       break;
-    case 'three', 'zero':
+    case 'zero', 'three':
       return 3;
       break;
-    case 'four', 'zero':
+    case 'zero', 'four':
       return 4;
       break;
-    case 'five', 'zero':
+    case 'zero', 'five':
       return 5;
       break;
-    case 'six', 'zero':
+    case 'zero', 'six':
       return 6;
       break;
-    case 'seven', 'zero':
+    case 'zero', 'seven':
       return 7;
       break;
-    case 'eight', 'zero':
+    case 'zero', 'eight':
       return 8;
       break;
-    case 'nine', 'zero':
+    case 'zero', 'nine':
       return 9;
       break;
    }
- } //END MINUS
-*/
+ }; //END MINUS
+
 // What about multiplication? Division? Exponents?
