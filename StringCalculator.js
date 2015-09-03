@@ -13,6 +13,8 @@ test('fromEnglish: "zero" through "nine"', function(){
   expect(fromEnglish("seven")).to.equal(7);
   expect(fromEnglish("eight")).to.equal(8);
   expect(fromEnglish("nine")).to.equal(9);
+  //expect(fromEnglish("seven")).to.equal("up yours");
+  //expect(fromEnglish("nine")).to.equal("the end");
   // more tests here, please...
 }); // END test(fromEnglish)
 
@@ -53,6 +55,13 @@ function fromEnglish(word) {
       return 9;
       break;
   }
+  if (word === 'seven') {
+    return 'up yours';
+  }
+  if (word === 'nine') {
+    return 'the end';
+  }
+
 };
 
   // Using a switch statement to walk through possible input and avoid writing a ton of if statements.
@@ -70,6 +79,8 @@ test('plus: ("zero", "zero") through ("zero", "nine")', function(){
   expect(plus("zero", "seven")).to.equal(7);
   expect(plus("zero", "eight")).to.equal(8);
   expect(plus("zero", "nine")).to.equal(9);
+  //expect(plus("one", "one")).to.equal(2);
+  //expect(plus("two", "two")).to.equal(4);
   // write more tests like those...
 }); // END test(plus)
 
@@ -110,6 +121,12 @@ function plus(A, B){
     case 'zero', 'nine':
       return 9;
       break;
+  }
+  if (A === 'one' && B === 'one') {
+    return 2;
+  }
+  if (A === 'two' && B === 'two') {
+    return 4;
   }
   // write those tests first, please...
 }; // END plus
