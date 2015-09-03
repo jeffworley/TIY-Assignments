@@ -284,7 +284,10 @@ Infinity is also a property of the global object so we can access it from anywhe
 3 * Infinity //Because Infinity is an impercise measurement, when we multiply 3 by it we get a result of Infinity.  The largest possible number.//
 ```
 
-### Function:
+## Functions:
+Functions are a form of [control flow](http://en.wikipedia.org/wiki/Control_flow) used in computer programs to determine the order in which your statements are executed.
+
+### `function` **keyword**:
 A function is a reusable block of code created to make something happen.  That can be behind the scenes or via a visual prompt or printout to the user.  Every function created with a function declaration (the code to set one up explicitly) is a function object and therefore gets access to the properties, methods, and behaviors of function objects.  When creating a function declaration you need three parts: the function name, the parameters you want to pass in if any and the statements you want to be executed when you call the function.  Below I will show you what this looks like.
 ###### A Few Examples:
 Your basic function structure:
@@ -310,4 +313,21 @@ printAbc();
 ```
 The above would read that when I invoke the printAbc function I want to create a temporary variable i and assign it a value of numeral 0.  If the value of i is less than or equal to the length of the abcContainer array, then I want the temporary variable i to increase it's position/value by 1.  Then print out the current value for position i.  If the value of i is not less than or equal to the length of the abcContainer array, then stop printing out.
 
+### Objects:
 
+#### Math object (Math):
+Math is an object that is built into JavaScript already.  It has many properties and methods for mathematical constants and functions.  Unlike JavaScript's other global objects, `Math` is not a constructor, meaning you don't create more "Math" objects by calling it like a constructor.  All properties and methods that `Math` has are "static" meaning they do not change with user input, but rather they are firmly defined so that they can be consistantly counted on _(no pun intended)_ to do their jobs.
+##### A Few `Math` Methods:
+ *The `Math.floor(x)` method recieves numeric input either from the user or another function and returns the largest integer less than or equal to that number.  For example if I were to say `Math.floor(4.6783);` it would return `4`.  This may seem counterintuitive because of what you learned in grade school math but this is a useful method in certain use cases.
+  *The `Math.random()` method doesn't have to have any input to perform it's task.  It simple returns a pseudo-random number between 0 and 1.  You may ask how can it be random if it only has two numbers to choose from.  Remember that in JavaScript all numbers are decimal numbers, it just doesn't always render that to us visually.  Therefore the `Math.random()` function has a lot of potential options between `0.00 and 1.00`.  An example of which might be `0.46832`.
+
+### Hoisting:
+In JavaScript, functions and variable are `hoisted`.  This is a behavior where JavaScript takes our declarations and moves them to the top of a scope (aka the global scope or current function scope).  What this means is that we are able to use a function or variable before it has been declared.  An example of this would be:
+```
+purpleMonster(); //This function invocation should log "eats people"
+
+function purpleMonster() {
+  console.log("eats people"); //log is also a "hoisted" function that we have not yet defined.
+};
+```
+In the above example we were able to invoke our function before we had defined it.  In some programming languages you are unable to do this because of it's natural `control flow` or the order in which it processes the statements you have written.  In this way JavaScript is a bit smarter and knows that it should look to see if the function was defined/declared elsewhere before resulting the invocation.
