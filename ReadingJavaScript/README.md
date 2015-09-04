@@ -322,7 +322,30 @@ if ("string" === true) { //Here it says if string word string is exactly equal t
 };
 ```
 
-**Pick Back Up HERE!!!!**
+### Loops and Iteration
+
+#### do...while statement:
+A `do...while` statement performs statements within the block operators until the specifed condition evaluates to a boolean value of `false`.  Regardless of the condition a `do...while` statement will execute the statements within the block operators at least once.
+###### A Few Examples:
+```
+do {
+  var x = 15; // This says that variable x starts with an assigned value of 15 and prints to the console that value.
+  x -= 1; // Then the value of x (15) will subtract 1 and assign the new value (14) to x.
+  console.log(i);
+} while (x > 10); //While the current value of x (14) is greater than 10 it will go back and print that value to the console.
+```
+
+#### while statement:
+The `while` statement is very similar to the `do...while` in the fact that it performs the statements within the block operators (`{}`) as long as the boolean value returned is `true`.  Unlike the `do...while` statement the `while` statement will not execute those statements unless the condition given results in `true` period.  You **MUST** make sure that your condition will eventually result in `false` or you will have created an infinite loop which will break your browser.
+###### A Few Examples:
+```
+var exampleArray = [4, 6, 7, 2, 8, 9];
+var i = exampleArray[i];
+var x = 4;
+while (i <= x) { //This says while the value of exampleArray location i is less than or equal to the value of x...
+  return i + "is less than or equal to" + x; //return a string stating that it is...
+}
+```
 
 ## Functions:
 Functions are a form of [control flow](http://en.wikipedia.org/wiki/Control_flow) used in computer programs to determine the order in which your statements are executed.
