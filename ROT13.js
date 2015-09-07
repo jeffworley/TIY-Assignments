@@ -1,5 +1,5 @@
 /**
- * The function `reverse` computes the reversal 
+ * The function `reverse` computes the reversal
  * of a given `String` (don't copy-pasta!)
  *
  * @param {String} S to reverse
@@ -7,6 +7,11 @@
  */
 function reverse(S){
     // YOUR CODE HERE: NO INTERNET COPY-PASTA!
+    var revResult = '';
+    for (var i = S.length - 1; i >= 0; i--) {
+      revResult += S[i];
+    }
+    return revResult;
 }
 
 console.assert(reverse("") === ""); // Really?
@@ -31,7 +36,7 @@ console.assert(
  * @see String.prototype.charCodeAt
  * @see String.prototype.fromCharCode
  * @see http://en.wikipedia.org/wiki/ROT13
- * 
+ *
  * // Start with just `phrase`...
  * @param {String} phrase to encode
  * // Add `N` in part 2!
