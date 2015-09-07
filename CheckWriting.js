@@ -107,3 +107,8 @@ test('BEAST MODE: toCheck', function(){
   assert.equal(toCheck(1234.56), "one thousand, two hundred thirty four & 56/100s");
   // you might need to try some values in between...
 }); // END test(BEAST MODE)
+
+function toCheck(value) {
+  var deciNum = value.toFixed(2); //This makes the input value show to the second decimal place.
+  var strNum = deciNum.toString(); //This will take the precious number and "stringify" it.
+}
