@@ -320,6 +320,76 @@ Math is an object that is built into JavaScript already.  It has many properties
 ##### A Few `Math` Methods:
  *The `Math.floor(x)` method recieves numeric input either from the user or another function and returns the largest integer less than or equal to that number.  For example if I were to say `Math.floor(4.6783);` it would return `4`.  This may seem counterintuitive because of what you learned in grade school math but this is a useful method in certain use cases.
   *The `Math.random()` method doesn't have to have any input to perform it's task.  It simple returns a pseudo-random number between 0 and 1.  You may ask how can it be random if it only has two numbers to choose from.  Remember that in JavaScript all numbers are decimal numbers, it just doesn't always render that to us visually.  Therefore the `Math.random()` function has a lot of potential options between `0.00 and 1.00`.  An example of which might be `0.46832`.
+  
+#### Array:
+The JavaScript Array is a type of container.  It is also a global object which means that it can be used to construct other Array's and is built into JavaScript already.  It's purpose is to store data that may need to change as needed.  This means that it is not fixed and will not always hold a familiar shape or makeup.  Arrays are initialized either empty/`undefined` or which preset values and locations.  When accessing an array element you start with the first location at 0.  Below I will show you how to do this and provide an example or two.
+```
+var someArray = []; //This would create an empty array that we can use as we like
+var someArray = [43, 87, 946, 2374]; //This would create an array with 4 values and indexed between 0 and 3
+console.log(someArray[2]); //This would print to the console the value 946;
+```
+##### Array Property Length:
+The `.length` property represents an unassigned 32 bit integer that is always greater than the highest index in the array it references.  You can manually manipulate the value that `.length` recognizes for the size of an array but it does not change the amount of contents within that array.  More often than not you will utilize the `.length` array property to iterate through the contents of an array.  This is particularly useful in `for` loops.  Below I will give you an example of what the `.length` property looks like and the types of output it can provide.
+```
+//let's take our someArray from our previous example
+var howBigIsIt = someArray.length; //This will store the length of someArray, which is 4, in the variable howBigIsIt
+for (var i = 0; i < someArray.length; i++) { //This says I want to walk through the array in increments of 1 as long as we don't exceed the length
+  console.log(someArray[i]); //Then I want to print out the value of the current array location
+};
+```
+##### Array Methods:
+ *The `array.pop()` method removes the last element from an array and returns that element to you for use as specified.  This could be used for any number of reasons.  I'll provide a couple of examples below.
+```
+var boyNames = ['John', 'Henry', 'Gustof', 'Henrik', 'Neil', 'Isaac'];
+var lastNameEntered = boyNames.pop(); //This would take 'Isaac', the last element in the array, and assign it to lastNameEntered
+var newLastNameEntered - boyNames.pop(); //This would now take 'Neil' and assign it as 'Isaac' has already been removed from the array contents.
+```
+  *The `array.push()` method adds one or more new elements to the end of an already established array and returns the new length of the array.  This method is dependent on the value of the `.length` property as it's starting point.  As always, I will provide an example or two below.
+```
+var carBrands = ['Honda', 'Ford'];
+var newCarBrands = carBrands.push('Lexus', 'Cheverolet', 'Maserati');
+console.log(carBrands); //This would now equal ['Honda', 'Ford', 'Lexus', 'Cheverolet', 'Maserati']
+consoel.log(newCarBrands);  //The new length would be 5
+```
+ *The `array.reverse()` method does exactly what it's name implies which is to reverse the order of an array's elements in place.  This means that whatever was at the last index is now at the first and vice versa.
+```
+var letterArray = ['a', 'b', 'c', 'd'];
+letterArray.reverse();
+console.log(letterArray); //This would now look like ['d', 'c', 'b', 'a']
+```
+ *The `array.shift()` method removes the first element of an array and returns it to the caller.  This does change the length of the array.
+```
+var pets = ['dog', 'cat', 'fish', 'bunny', 'snake'];
+pets.shift();
+console.log(pets); //The new array would be ['cat', 'fish', 'bunny', 'snake'];
+```
+ * The `array.splice()` method alters the contents of an array by removing elements and/or adding new elements.  The syntax typically takes in the parameters of starting point (this is the index that you want to start you alterations), then a deleteCount (this is how many elements you want to remove) and then optionally what new item you want to insert.  If the starting point is a negative number it is measured from the end of the array.  If the deleteCount is 0 or not specified then you don't remove anthing and more than likely are going to insert at that location.
+```
+var numbers = [54, 76, 983, 264];
+numbers.splice(2, 1); //This would remove 983
+numbers.splice(1, 0, 59);  //This would change the array to hold [54, 59, 76, 264]
+```
+ *The `array.slice()` method acts a lot like the `array.splice` method in the sence that it is asking for which part of the array you want to manipulate.  Unlike the `array.splice` method, the `array.slice` method doesn't alter the original array.  Instead it creates a new array with the portion of the original that you specified.  It requires parameters of a starting point and ending point, both of which based on the index location.
+```
+var food = ['hamburger', 'biscuit', 'bacon', 'potatoes'];
+var favs = food.slice(2, 4);
+console.log(favs); //This would return an array with ['bacon', 'potatoes'];
+```
+ *The `array.join()` method merges all of the elements in an array into a string.  For a parameter it takes what you want to use as a delimiter for each array element as a string if any.
+```
+var initials = ['JW', 'PT', 'QS', 'RG'];
+var example1 = initals.join(); //This would look like 'JW,PT,QS,RG'
+var example2 = initals.join(' + '); //This would look like 'JW + PT + QS + RG'
+```
+ *The `array.toString()` method does almost the exact same thing that `array.join` does but instead does not accept a delimiter parameter.  It simply creates one large string of all array elements separated by commas. **If you need to see an example, look above at the parameter-less `array.join` example**
+ *The `array.split()` method splits a String object into an array of strings by separateing it into substrings.  As for a parameters, you have the option to identify a separator that would like to used or the limit on the number of splits() to be found within the String object.  This is great for iterating through information that was once in String form which cannot be iterated through.
+```
+var phrase = "Oh what a day it will be, what a day it will be";
+var arrayPhrase = phrase.split(space);
+console.log(arrayPhrase); //['Oh', 'what', 'a', 'day', 'it', 'will', 'be', ',', 'what', 'a', 'day', 'it', 'will', 'be']
+```
+
+
 
 ### Hoisting:
 In JavaScript, functions and variable are `hoisted`.  This is a behavior where JavaScript takes our declarations and moves them to the top of a scope (aka the global scope or current function scope).  What this means is that we are able to use a function or variable before it has been declared.  An example of this would be:
