@@ -6,6 +6,7 @@ var items = require('items.json');
 // TODO: Setup mocha and chai...
 
 test('this is the easy one', function(){
+  expect(items).to.exist;
   expect(Array.isArray(items)).to.be.true; // What.
   // see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray
 
@@ -17,7 +18,75 @@ function isArray(items) {
 };
 
 test('finding the average price', function(){
-  var yourAnswer = items.indexOf(10);
+  //var yourAnswer = items.indexOf(10); This was wrong.
+  //maybe reference the key in the dictionary object. var yourAnswer = items.price();
+
+  /*
+   * We need to know each item's price.
+  */
+   var prices = [ ];
+
+
+// {
+//    var index, length;
+//
+//    index = 0; length = 1;
+// }
+//    // For the first item in the list
+//    var item = items[index];
+//    expect(item).to.be.an('object');
+//    expect(item.price).to.be.a('number');
+//    // expect(item.price).to.be.equal(12);
+//
+//    prices.push(item.price);
+//
+//    // expect(prices).to.deep.equal([12]);
+//    expect(prices.length).to.equal(length);
+
+// {
+//   index = 1; length = 2;
+// }
+//
+//    //For the second item in the list
+//    item = items[index];
+//    expect(item).to.be.an('object');
+//    expect(item.price).to.be.a('number');
+//    // expect(item.price).to.be.equal(20);
+//
+//    prices.push(item.price);
+//
+//    // expect(prices).to.deep.equal)([12,20]);
+//    expect(prices.length).to.equal(length);
+
+//Let's Refactor the Above!!!
+function forEachItem(index, length) {
+
+  expect(item).to.be.an('object');
+  expect(item.price).to.be.a('number');
+
+  prices.push(item.price);
+
+  expect(prices.length).to.equal(length);
+
+};
+
+var index, length;
+
+items.forEach(function(item,index, all){
+  forEachItem(index, index + 1);
+})
+
+forEachItem(0,1);
+forEachItem(1,2);
+forEachItem(2,3);
+forEachItem(3,4);
+
+  /* We need to figure out the sum of all item's prices.
+   * We need to know the total number of items.
+   *
+   * The sum of all item prices is divided by the number of items.
+   *
+
   return yourAnswer; //Have no idea why this works.  Couldn't decipher if indexOf grabs the array at that point within the array or the element at that point within each array inside of the array.  Didn't seem like parameter mattered.
 
   expect(yourAnswer).to.be.closeTo(23.63, 0.01);
