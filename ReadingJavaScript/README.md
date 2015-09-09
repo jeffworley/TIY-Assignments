@@ -464,3 +464,59 @@ function purpleMonster() {
 };
 ```
 In the above example we were able to invoke our function before we had defined it.  In some programming languages you are unable to do this because of it's natural `control flow` or the order in which it processes the statements you have written.  In this way JavaScript is a bit smarter and knows that it should look to see if the function was defined/declared elsewhere before resulting the invocation.
+
+### Document Object Model (DOM):
+The **Document Object Model** is a structured representation of a document and it defines how it can be accessed from programs so they can change things about it.  This is most commonly associated with HTML.  In a nutshell it connects webpages to scripts or programming languages.  For our case we will be accessing the DOM using JavaScript.
+
+#### Window Object:
+In the most simple way that I can explain it, the `Window Object` represents a window that that contains a DOM document.  This means that whenever you launch a webpage or new tab you are seeing the `Window Object` in action.  There are many properties and methods available to the `Window Object` and below I will cover a few.
+##### Window Object Properties:
+* `Window.location` gets/sets the location (URL) of the window object.
+* `Window.document` returns a reference to the document that the window contains.
+* `Window.history` returns a reference to the history object.  The `history` object contains the session browsing history for the current `window`.
+##### Window Object Methods:
+* `Window.alert()` method displays an alert dialog/box with optional text and an ok button.
+* `Window.confirm()` method displays a dialog box with an optional message and two buttons, ok and cancel.
+* `Window.close()` method closed the current window that it was called on.
+* `Window.open()` method loads a resource into a new browsing window or one that already exists.
+* `Window.reload()` method technically belongs to the `Location` object but is referred to by the `Window` object as it reloads the resource from the current URL.
+
+#### Location Object/Interface:
+The `Location` interface represents the location of the object it is linked to.  Any changes done on it are reflected on the object it relates to and both the `Document` and `Window` interface have a linked location.  The `Location` interface doesn't inherit any properties but does implement those from `URLUtils`.  The same goes for methods.  The methods that it can implement from `URLUtils` are `assign()`, `reload()`, `replace()` and `toString()`.  Each of these is pretty self explanitory and I believe that this is intentional to make use logical.
+
+#### Document Object:
+The `Document` object serves as the entry point into the web page's content and provides functionality which is globaly available to the Document.  Each web page loaded has one of these.
+##### Document Object Properties:
+* `Document.body` is a `HTML` property of the `Document` object.  It returns the `<body>` or `<frameset>` node of the current document.  In basic terms it is the element that contains the content for the document.
+* `Document.head` is also a `HTML` property and returns the `<head>` element of the current document.  It is read-only and you cannot adjust the value.
+##### Document Object Methods:
+* `Document.getElementById()` returns a reference to an element by its `ID`.  This is the same `ID` we would use in our HTML to mark a unique element.
+* `Document.getElementsByClassName()` returns an array-like object of all child elements that share a class name as identified in the HTML.
+* `Document.querySelector()` returns the first element in a document that matches the specified selector.  It's sister method `Document.querySelectorAll()` returns a list of all the elements within a document that match the specified selector.
+* `Document.appendChild()` is inherited by the `Node` object and adds a node to the end of the list of children of the specified parent node.
+* `Document.create*()` creates a new node/element based on which element you have selected to create.  There are create methods for almost any object and node/element in a Document.
+* `Document.write(String text)` method writes text in a document.
+* `Document.writeIn(String text)` method writes a line of text in a document.
+
+#### HTMLElement type:
+The `HTMLElement` type refers to any element you would find in an HTML document which is what is loaded into the DOM `Window` object.
+##### HTMLElement Properties:
+* `id` is an HTML element used to mark an element as unique for later reference.
+* `className` is an HTML element used to mark elements that are related to one another and need to be referenced as a group/class at a later time.
+* `innerHTML` sets/gets the HTML syntax describing the element's descendants.  This also is inherited from the `Element` object.  It is a simple way to completely replace the contents of an element like the document body.
+* `outerHTML` replaces a node (i.e. id or class identified element) with whatever the tag and text within it are.
+* `children` returns the elements that inherit from the parent element.  This changes based on the parent that you specify as part of the reference.
+* `parent` returns the DOM parent element that was specified or that is the parent for the child element specified.
+* `nextSibling` returns the node/element immediately following the specified one.
+* `firstChild` returns the node's/element's first child that is specified in the inheritance tree.
+##### HTMLElement Methods:
+* `addEventListener()` method registers the specified listener (object that receives a notification when an event of the specified type occurs) on the EventTarget it's called on.
+* `dispatchEvent()` method dispatches an event(actionable code) at the specified target which invokes the affected listeners in the appropriate order.
+* `attribute*()` methods grab and manipulate various attributes within the HTML document.
+
+#### HTMLCollection:
+The `HTMLCollection` interface/type represents a generic collection of elements (in document order) and offers methods and properties for selecting from the list.  It is in the HTML DOM and is live so it updates as it changes.  This is different than an `array` in the sense that it does not contain various types but rather it contains HTML DOM Elements specifically.  It can be used like an `array` to iterate through and manipulate the elements of an HTML document.
+
+#### NodeList:
+`NodeList` objects are collections of nodes such as those returned by the the `childNodes` and `querySelectorAll` methods.  This is different than an `array` in that it can be both dynamic and static depending on it's use.  It is similar to an `array` in that it holds the different object types of the DOM and that it is referenced by an index.
+* The `item()` method works the same in both `HTMLCollection` and `NodeList`.  It gets an element stored within them by it's position.
