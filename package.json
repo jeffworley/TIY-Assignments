@@ -1,6 +1,7 @@
 {
-  "name": "tiy-assignments-03--the-todo-towers",
-  "version": "1.0.0",
+
+  "name": "04--return-of-the-string",
+  "version": "0.0.1",
   "description": "",
   "main": "BasicCalculator.js",
   "scripts": {
