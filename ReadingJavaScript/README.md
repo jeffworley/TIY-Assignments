@@ -284,6 +284,69 @@ Infinity is also a property of the global object so we can access it from anywhe
 3 * Infinity //Because Infinity is an impercise measurement, when we multiply 3 by it we get a result of Infinity.  The largest possible number.//
 ```
 
+## Control Flow Statements:
+These are a set of compact statements that JavaScript supports that give us the ability to have a lot of interactivity when creating applications.  Remember that _control flow_ is the order in which the program executes statements within the script.
+
+### Block Statements w/Block Operators ({}):
+Block operators are the `{}` that you see all throughout JavaScript code.  They are meant to create boundaries around a single or collection of statements.  This is called a block statement.  Block statements are critical to the control flow of our script in that it helps to identify scope.  I will go into scope more in another part of this document but scope is what lets the control flow know what statements can access other statements and in what order they should do so.
+###### A Few Examples:
+```
+function banana {
+  //some statement code here...
+}; The Block operators ({}) on either side of the statement code inside create a block statement.  This means that the code inside is local and therefore the control flow knows that code outside of the block cannot access it.
+
+var orange = {
+  0,
+  1,
+  "two"
+};  Here the block operators do not contain a complete statement inside of them.  Instead they house values meant to be assigned to var orange which can be used by the global (_everywhere_) scope.
+```
+
+### Conditional Statements:
+A set of commands that executes if the evaluated condition is true.
+
+#### if...else:
+An _if...else_ statement takes in a condition that can evaluate to a boolean value.  If the condition returns the boolean value of `true` then the code placed inside the _if...else_ statements block operators (`{}`) will execute.  If the condition returns the boolean value of `false` it will either do nothing and end the evaluation or you can use the `else` statement to specify what you want executed when `false`.
+###### A Few Examples:
+```
+if (2 === 2) { //Here it says if the numeral 2 is exactly equal to numeral 2...
+  console.log("Twins!"); //then print to my console the message
+} else { //if it they are not exactly equal...
+  console.log("It was too good to be true."); //then print to my console this message
+};
+
+if ("string" === true) { //Here it says if string word string is exactly equal to a boolean value of true...
+  return "You've got string!"; //and the rest is the same as above.
+} else {
+  return "Guess you'll need to find another way";
+};
+```
+
+### Loops and Iteration
+
+#### do...while statement:
+A `do...while` statement performs statements within the block operators until the specifed condition evaluates to a boolean value of `false`.  Regardless of the condition a `do...while` statement will execute the statements within the block operators at least once.
+###### A Few Examples:
+```
+do {
+  var x = 15; // This says that variable x starts with an assigned value of 15 and prints to the console that value.
+  x -= 1; // Then the value of x (15) will subtract 1 and assign the new value (14) to x.
+  console.log(i);
+} while (x > 10); //While the current value of x (14) is greater than 10 it will go back and print that value to the console.
+```
+
+#### while statement:
+The `while` statement is very similar to the `do...while` in the fact that it performs the statements within the block operators (`{}`) as long as the boolean value returned is `true`.  Unlike the `do...while` statement the `while` statement will not execute those statements unless the condition given results in `true` period.  You **MUST** make sure that your condition will eventually result in `false` or you will have created an infinite loop which will break your browser.
+###### A Few Examples:
+```
+var exampleArray = [4, 6, 7, 2, 8, 9];
+var i = exampleArray[i];
+var x = 4;
+while (i <= x) { //This says while the value of exampleArray location i is less than or equal to the value of x...
+  return i + "is less than or equal to" + x; //return a string stating that it is...
+}
+```
+
 ## Functions:
 Functions are a form of [control flow](http://en.wikipedia.org/wiki/Control_flow) used in computer programs to determine the order in which your statements are executed.
 
