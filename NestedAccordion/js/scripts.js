@@ -17,19 +17,24 @@
  * Identify H3 elements with a class of "cbp-nttrigger".
  */
 
+// To target the first element with a class of "cbp-nttrigger".
 var headLevel3 = document.querySelector('.cbp-nttrigger');
+
+// To create an array of li elements for access later.
 var liList = document.getElementsByTagName('li');
 
 headLevel3.addEventListener('click', function(){
 
-  //console.log("The click worked!!!");
-  liList[0].classList.add("cbp-ntopen");
+  /* To test if our target hears the click event via console.log side effect message.
+   * console.log("The click worked!!!");
+   */
 
-  //if (liList[0].classList === ".cbp-ntopen") {
-    //liList[0].classList.remove("cbp-ntopen");
-  //} else {
-    //liList[0].classList.add("cbp-ntopen");
-  //}
+  /* To assign class of "cbp-ntopen" for the first li element which opens up view to nested p element.
+  * liList[0].classList.add("cbp-ntopen");
+  */
+
+  // To toggle the assignement of class "cbp-ntopen" for the first li element.
+  liList[0].classList.toggle('cbp-ntopen');
 
 });
 
