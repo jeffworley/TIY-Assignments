@@ -46,7 +46,7 @@ gridBtn.addEventListener('click', function(){
   switcher.classList.remove('cbp-vm-view-list');
   // Then add the class 'cbp-vm-view-grid' from the <div> element with a fixed class of 'cbp-vm-switcher'.
   switcher.classList.add('cbp-vm-view-grid');
-  
+
 });
 
 // To access the <div> element with a fixed class of 'cbp-vm-switcher'.
