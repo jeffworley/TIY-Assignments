@@ -24,13 +24,50 @@
 // To target all <h3> elements with a class of "cbp-nttrigger".
 var headLevel3All = document.querySelectorAll('h3.cbp-nttrigger');
 
-// To create an array of li elements for access later.
-var liList = document.getElementsByTagName('li');
+/* To create an array of li elements for access later.
+ * var liList = document.getElementsByTagName('li');
+ */
+
+// To create an array of all <li> elements that are a child of a <ul> element with a class of "cbp-ntaccordion".
+var liToChange = document.querySelectorAll('ul.cbp-ntaccordion > li');
+
+//Longform solution to adding event listeners to <h3> elements and toggling class on <li> elements to achieve desired accordion effect.
+headLevel3All[0].addEventListener('click', function(){
+  liToChange[0].classList.toggle('cbp-ntopen');
+});
+
+headLevel3All[1].addEventListener('click', function(){
+  liToChange[1].classList.toggle('cbp-ntopen');
+});
+
+headLevel3All[2].addEventListener('click', function(){
+  liToChange[2].classList.toggle('cbp-ntopen');
+});
+
+headLevel3All[3].addEventListener('click', function(){
+  liToChange[3].classList.toggle('cbp-ntopen');
+});
+
+headLevel3All[4].addEventListener('click', function(){
+  liToChange[4].classList.toggle('cbp-ntopen');
+});
+
+
+// To iterate through my array of <li> elements, target the current child <h3> element, add an event listener to that <h3> element, and then toggle the class for the current <li> element.
+/*for (var liCount = 0; liCount < liToChange.length; liCount++){
+ *  var currentLi = liToChange[liCount];
+ *  var currentChildH3 = liToChange[liCount].querySelector('h3.cbp-nttrigger');
+ *  currentLi.addEventListener('click', function(){
+ *    console.log('you clicked' + currentChildH3);
+ *    currentLi.classList.toggle('cbp-ntopen');
+ *  });
+ *};
+ */
 
 // To iterate through my array of <h3> elements and assign each an event listener for the click event.
-for(var i = 0; i < headLevel3All.length; i++){
+//for(var i = 0; i < headLevel3All.length; i++){
 
-  headLevel3All[i].addEventListener('click', function(){
+ //headLevel3All[i].addEventListener('click', function(){
 
   /* To test if our target hears the click event via console.log side effect message.
    * console.log("The click worked!!!");
@@ -42,10 +79,11 @@ for(var i = 0; i < headLevel3All.length; i++){
   */
 
   // To toggle the assignement of class "cbp-ntopen" for the first li element.
-  //liList[0].classList.toggle('cbp-ntopen');
+  /*liList[0].classList.toggle('cbp-ntopen');
 
-  });
-};
+   *});
+  *};
+  */
 
 /*
  * Add the class "cbp-ntopen" to each list item in the parent unordered list when the above H3 element is clicked.
