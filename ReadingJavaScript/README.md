@@ -525,39 +525,38 @@ Event bubbling is control which DOM elements have access to an event trigger as 
 An Event.target is a reference to the object that dispatched the event.
 ##### MouseEvents:
 This is an interface that represents events that trigger due to the use of the mouse.
-###### Click:
+* Click:
 This event is fired when a mouse is pressed and released on a single element.
-###### dbclick:
+* dbclick:
 This event is fired when a mouse is double clicked on a single element.  A common example that many of us remember is when we go to open an application.
-###### mouseup:
+* mouseup:
 This event is fired when a mouse click is released over an element.
-###### mousedown:
+* mousedown:
 This event is fired when a mouse click is pressed over an element but not released.
-###### WheelEvent:
+* WheelEvent:
 This event is fired when a mouse wheel or similar device is used.
-###### DragEvent:
+* DragEvent:
 This event is fired when a mouse click is held down and dragged over an area of text.
-##### Scroll:
-The `scroll` event is triggered when the document view or an element has been scrolled.
 ##### Keyboard Events:
 This is a result of a `keyboard` object that describes a specific keyboard user interaction.  The three types of keyboard events are `keydown`, `keypress` or `keyup`.  Each of which is pretty self explanitory.
 ##### Common Events:
-###### Change:
+* Scroll:
+The `scroll` event is triggered when the document view or an element has been scrolled.
+* Change:
 The `change` event is triggered when a `input`, `select` or `textarea` value is changed.
-###### Load:
+* Load:
 The `load` event is triggered when a resource and it's dependent resources have completed loading.
-###### Unload:
+* Unload:
 The `unload` event is triggered when the document or child resource is being unloaded.  This can be beacuse of a page state or as a result of another event.
 ##### Form Events:
 These are events that can be used on the elements within the `form` element of an HTML document.
-###### Submit:
+* Submit:
 The `submit` event is triggered when a form is submitted.  This means that the form element was submitted and is not directly tied to a button click.
-###### Reset:
+* Reset:
 The `reset` event is triggered when a form is reset.
-**The below are not clearly documented in the MDN JavaScript Reference but are in the `jQuery` Reference.**
-###### Focus:
+* Focus:
 The `focus` event is triggered when a form element is assigned focus.  This is usually through a click event.
-###### Blur:
+* Blur:
 The `blur` event is triggered when a form element loses it's assigned focus.  This is usually a result of assigning focus to another form element.
 
 
