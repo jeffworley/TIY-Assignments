@@ -517,6 +517,49 @@ The `HTMLElement` type refers to any element you would find in an HTML document 
 #### HTMLCollection:
 The `HTMLCollection` interface/type represents a generic collection of elements (in document order) and offers methods and properties for selecting from the list.  It is in the HTML DOM and is live so it updates as it changes.  This is different than an `array` in the sense that it does not contain various types but rather it contains HTML DOM Elements specifically.  It can be used like an `array` to iterate through and manipulate the elements of an HTML document.
 
+#### Events:
+The event interface represents any event of the DOM.  There are a lot of these depending on the type of website, form, game, or project that you are building.  Some of the most common are the `click`, `input`, `change`, etc...
+##### Event.bubbles:
+Event bubbling is control which DOM elements have access to an event trigger as well as in what order.  It returns a `boolean` value depending on whether or not it is supposed to bubble up.  This means that if you put an event on the highest DOM element, every element beneath it will trigger it as well.  More commonly, if you place an event trigger on a nested element it will `bubble` up in order of it's direct parent and so on and so forth.  You can stop the bubbing process with a handler.
+##### Event.target:
+An Event.target is a reference to the object that dispatched the event.
+##### MouseEvents:
+This is an interface that represents events that trigger due to the use of the mouse.
+* Click:
+This event is fired when a mouse is pressed and released on a single element.
+* dbclick:
+This event is fired when a mouse is double clicked on a single element.  A common example that many of us remember is when we go to open an application.
+* mouseup:
+This event is fired when a mouse click is released over an element.
+* mousedown:
+This event is fired when a mouse click is pressed over an element but not released.
+* WheelEvent:
+This event is fired when a mouse wheel or similar device is used.
+* DragEvent:
+This event is fired when a mouse click is held down and dragged over an area of text.
+##### Keyboard Events:
+This is a result of a `keyboard` object that describes a specific keyboard user interaction.  The three types of keyboard events are `keydown`, `keypress` or `keyup`.  Each of which is pretty self explanitory.
+##### Common Events:
+* Scroll:
+The `scroll` event is triggered when the document view or an element has been scrolled.
+* Change:
+The `change` event is triggered when a `input`, `select` or `textarea` value is changed.
+* Load:
+The `load` event is triggered when a resource and it's dependent resources have completed loading.
+* Unload:
+The `unload` event is triggered when the document or child resource is being unloaded.  This can be beacuse of a page state or as a result of another event.
+##### Form Events:
+These are events that can be used on the elements within the `form` element of an HTML document.
+* Submit:
+The `submit` event is triggered when a form is submitted.  This means that the form element was submitted and is not directly tied to a button click.
+* Reset:
+The `reset` event is triggered when a form is reset.
+* Focus:
+The `focus` event is triggered when a form element is assigned focus.  This is usually through a click event.
+* Blur:
+The `blur` event is triggered when a form element loses it's assigned focus.  This is usually a result of assigning focus to another form element.
+
+
 #### NodeList:
 `NodeList` objects are collections of nodes such as those returned by the the `childNodes` and `querySelectorAll` methods.  This is different than an `array` in that it can be both dynamic and static depending on it's use.  It is similar to an `array` in that it holds the different object types of the DOM and that it is referenced by an index.
 * The `item()` method works the same in both `HTMLCollection` and `NodeList`.  It gets an element stored within them by it's position.
