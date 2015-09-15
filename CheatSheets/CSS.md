@@ -23,6 +23,7 @@ This is a value you can set to tell the DOM exactly where you want an element in
 * The `relative` value stays within the overall layout but then accepts parameters for top, bottom, right, and left.  This one is confusing and I have yet to see it used or know why it would be.
 * The 'absolute` value does not have a space saved for it within the overall layout.  Instead it takes parameters of top, bottom, right and left as it relates to the parent block or overall window.
 * The `fixed` value is similar to the absolute in that no space is saved for it within the overall layout.  However it doesn't care about it's parent element and remains in the same place within the window regardless of page scrolling or sizing.
+
 ##### Float:
 The `float` property is mainly used when you want to wrap text around a photo.  This is accomplished by removing the desired element from the normal flow and sliding it beside (either left or right) of the container it is in.
 ##### Clear:
