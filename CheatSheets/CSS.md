@@ -34,4 +34,14 @@ The `clearfix` property is used when a floated image is bigger than the text or 
 #### Media Queries:
 Media queries are closely associated with the pracitce of responsive design.  This means designing your online content in a manner that will respond to various browser and screen sizes while still looking proportional and good.  They are called with the `@media` and associates display values to a set of associated statements.  They are powerful and look something similar to a function invocation of sorts.
 
+### [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color) 
 
+The text color of an element and its decorations (??)
+
+#### Possible Values: [any `<color>` value](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
+
+* a hexadecimal color value: `#012345`, `#CCC`
+* a color keyword: `cornflowerblue`, `purple`, `orange`
+* RGB decimal notation: `rgb(0,0,0)`, `rgb(255, 255, 255)`
+* RGBa (transparency) notation: `rgba(0,0,0,0)`, `rgba(255, 255, 255, 0.8)`
+* HSL decimal notation: `hsl(0, 100%, 50%)`
