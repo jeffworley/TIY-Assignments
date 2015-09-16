@@ -75,7 +75,7 @@ ul {
 }
 
 /*Hide the <p> element in h4 until clicked*/
-.cbp-ntsubaccordion .cbp-ntcontent {
+.cbp-ntaccordion .cbp-ntsubaccordion .cbp-ntcontent {
   height: 0;
   overflow: hidden;
 }
