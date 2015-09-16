@@ -62,3 +62,9 @@ ul {
   font-weight: 400;
   color: #aaaaaa;
 }
+
+/*Hide the paragraph element until clicked*/
+.cbp-ntaccordion .cbp-ntcontent {
+  height: 0;
+  overflow: hidden;
+}
