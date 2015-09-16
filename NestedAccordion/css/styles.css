@@ -68,3 +68,8 @@ ul {
   height: 0;
   overflow: hidden;
 }
+
+/*Set <p> element height in the <h3> elements to auto when <li> element gets class '.cbp-ntopen' from JavaScript*/
+.cbp-ntaccordion .cbp-ntopen .cbp-ntcontent {
+  height: auto;
+}
