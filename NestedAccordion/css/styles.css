@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/*Set the font and font color for the document body*/
+body {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #47a3da;
+}
+
+/*Set the font-size and color for the Header elements*/
+.container .clearfix span {
+  font-weight: 700;
+}
+
+.container .clearfix h1 {
+  font-size: 2.125em;
+  font-weight: 400;
+}
+
+/*Set the font-size and font-weight for the h3 elements*/
+#cbp-ntaccordion .cbp-nttrigger {
+  font-size: 2.75em;
+  font-weight: 300;
+}
+
+/*Set the font-size and font-weight for the h4 elements*/
+#cbp-ntaccordion .cbp-ntsubaccordion .cbp-nttrigger {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+/*Set the font-size, font-weight and color for the h5 elements*/
+.cbp-ntsubaccordion h5 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #aaaaaa;
+}
