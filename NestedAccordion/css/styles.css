@@ -7,12 +7,12 @@ body {
 }
 
 /*Set the font-size and color for the Header elements*/
-.container .clearfix span {
+.clearfix span {
   font-weight: 700;
   color: #47a3da;
 }
 
-.container .clearfix h1 {
+.clearfix h1 {
   font-size: 2.125em;
   font-weight: 400;
   color: #47a3da;
@@ -28,9 +28,19 @@ ul {
   content: "\21a0  ";
 }
 
+/*Create the Arrow action for h3 elements*/
+.cbp-ntaccordion > li >.cbp-nttrigger:hover:before {
+  content: "\21a1  ";
+}
+
 /*Create the Arrows next to the h4 and h5 elements*/
 .cbp-ntsubaccordion > li >.cbp-nttrigger:before {
-  content: "\21a0  ";
+  content: "\292d  ";
+}
+
+/*Create the Arrow action for the h4 and h5 elements*/
+.cbp-ntsubaccordion > li >.cbp-nttrigger:hover:before {
+  content: "\2930  ";
 }
 
 /*Set the font-size and font-weight for the h3 elements*/
