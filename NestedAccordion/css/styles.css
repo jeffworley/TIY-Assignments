@@ -3,23 +3,41 @@
 /*Set the font and font color for the document body*/
 body {
   font-family: 'Lato', Calibri, Arial, sans-serif;
-  color: #47a3da;
+  /*color: #47a3da;*/
 }
 
 /*Set the font-size and color for the Header elements*/
 .container .clearfix span {
   font-weight: 700;
+  color: #47a3da;
 }
 
 .container .clearfix h1 {
   font-size: 2.125em;
   font-weight: 400;
+  color: #47a3da;
+}
+
+/*To get rid of default list bullets*/
+ul {
+  list-style-type: none;
+}
+
+/*Create the Arrows next to h3 elements*/
+.cbp-ntaccordion > li >.cbp-nttrigger:before {
+  content: "\21a0  ";
+}
+
+/*Create the Arrows next to the h4 and h5 elements*/
+.cbp-ntsubaccordion > li >.cbp-nttrigger:before {
+  content: "\21a0  ";
 }
 
 /*Set the font-size and font-weight for the h3 elements*/
 #cbp-ntaccordion .cbp-nttrigger {
   font-size: 2.75em;
   font-weight: 300;
+  color: #47a3da;
 }
 
 /*Set the font-size and font-weight for the h4 elements*/
