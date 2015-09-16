@@ -92,6 +92,7 @@ Pseudo-classes, together with pseudo-elements, let you apply a style to an eleme
 * :target
 * :valid
 * :visited
+
 #### `Pseudo-elements`:
 Just like pseudo-classes, pseudo-elements are added to selectors but instead of describing a special state, they allow you to style certain parts of a document. For example, the ::first-line pseudo-element targets only  the first line of an element specified by the selector.
 ##### Index of pseudo-elements:
