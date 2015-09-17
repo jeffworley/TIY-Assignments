@@ -114,3 +114,19 @@ The text color of an element and its decorations (??)
 * RGB decimal notation: `rgb(0,0,0)`, `rgb(255, 255, 255)`
 * RGBa (transparency) notation: `rgba(0,0,0,0)`, `rgba(255, 255, 255, 0.8)`
 * HSL decimal notation: `hsl(0, 100%, 50%)`
+
+### [`font-*`](https://developer.mozilla.org/en-US/docs/Web/CSS/font)
+
+### Text Properties:
+#### [`text-align`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align)
+#### [`text-indent`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent)
+#### [`text-transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
+
+### Line Properties:
+#### [`line-break`](https://developer.mozilla.org/en-US/docs/Web/CSS/line-break)
+#### [`line-height`](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height)
+
+### [`background-*`](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
+
+
+
