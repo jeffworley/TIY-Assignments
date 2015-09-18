@@ -1,0 +1,53 @@
+/* Setting up the form defaults */
+.cbp-mc-form {
+    display: block;
+    font-size: 1.1em;
+    position: relative;
+}
+
+/* Clearing up the distinction between the columns and the form as a whole */
+.cbp-mc-column {
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+/* Setting up the forms label formats */
+.cbp-mc-form label {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding-top: 40px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+/* Setting up the various input elements */
+.cbp-mc-form input,
+.cbp-mc-form textarea,
+.cbp-mc-form select {
+    font-size: 1.4em;
+    color: #fff;
+    background-color: #47a3da;
+    display: block;
+    line-height: 1.5em;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+/* Giving border to form elements that should have one */
+.cbp-mc-form input,
+.cbp-mc-form textarea {
+  border: 3px solid #fff;
+}
+
+/* Setting size of textarea to distinguish it from input and help queue user */
+.cbp-mc-form textarea {
+    min-height: 8em;
+}
