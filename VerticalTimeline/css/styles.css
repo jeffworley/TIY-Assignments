@@ -1,0 +1,84 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/* Set default style for body */
+body {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #47a3da;
+}
+
+/* Set default styles for anchor elements */
+a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+}
+
+/* Set default styles for header elements */
+.main,
+.container .clearfix {
+  width: 90%;
+  max-width: 69em;
+  margin: 0 auto;
+  padding-right: 1.75em;
+  padding-bottom: 3em;
+  padding-left: 1.75em;
+}
+
+.container .clearfix {
+  padding-top: 2.75em;
+  padding-right: 1.75em;
+  padding-bottom: 1.75em;
+  padding-left: 1.75em;
+}
+
+.container .clearfix h1 {
+  font-size: 2em;
+  line-height: 1.3em;
+  margin-bottom: 0.5em;
+  float: left;
+  font-weight: 400;
+}
+
+.container .clearfix span {
+  display: block;
+  position: relative;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.1em;
+}
+
+.container .clearfix nav {
+  float: right;
+  text-align: center;
+}
+
+.container .clearfix nav a {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  margin-right: 0.1em;
+  margin-left: 0.1em;
+}
+
+/* Set default media inquiry viewport format */
+@media screen and (max-width: 55em) {
+  .container .clearfix h1,
+  .container .clearfix nav {
+    float: none;
+  }
+  .container .clearfix span,
+  .container .clearfix h1 {
+    text-align: center;
+  }
+  .container .clearfix nav {
+    margin: 0 auto;
+  }
+  .container .clearfix span {
+    text-indent: 30px;
+  }
+}
