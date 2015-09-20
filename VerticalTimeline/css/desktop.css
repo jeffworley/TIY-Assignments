@@ -4,10 +4,10 @@
   color: #fff;
   margin-bottom: 15px;
   margin-left: 25%;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
   font-size: 14pt;
   font-weight: 300;
   line-height: 1.5em;
@@ -18,4 +18,33 @@
 /* Set the color for every other li to be lighter */
 .cbp_tmtimeline li:nth-child(odd) .cbp_tmlabel {
   background: #6cbfee;
+}
+
+/* Set the style for li h2 element */
+.cbp_tmtimeline li .cbp_tmlabel h2 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+/* Create the triangle that sticks out from the ul li div element */
+.cbp_tmtimeline li .cbp_tmlabel:after {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  position: absolute;
+  border-right-color: #3594cb;
+  border-width: 10px;
+  top: 10px;
+}
+
+/* Set the color for every other triangle to be lighter */
+.cbp_tmtimeline li:nth-child(odd) .cbp_tmlabel:after {
+  border-right-color: #6cbfee;
+}
+
+/* Remove auto styles from time elements */
+.cbp_tmtimeline {
+  margin-top: 30px;
+  list-style: none;
+  position: relative;
 }
