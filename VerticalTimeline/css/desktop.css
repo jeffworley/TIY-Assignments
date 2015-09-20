@@ -1,3 +1,37 @@
+/* Remove auto styles from time elements */
+.cbp_tmtimeline {
+  margin-top: 30px;
+  list-style: none;
+  position: relative;
+}
+
+/* Set up styles for the date and time span elements */
+.cbp_tmtimeline li {
+  position: relative;
+}
+
+.cbp_tmtimeline li .cbp_tmtime {
+  display: block;
+  width: 25%;
+  padding-right: 100px;
+  position: absolute;
+}
+
+.cbp_tmtimeline li .cbp_tmtime span {
+  display: block;
+  text-align: right;
+}
+
+.cbp_tmtimeline li .cbp_tmtime span:first-child {
+  font-size: 12pt;
+  color: #bdd0db;
+}
+
+.cbp_tmtimeline li .cbp_tmtime span:last-child {
+  font-size: 22pt;
+  color: #3594cd;
+}
+
 /* Set the style for the div information in each li within the ul */
 .cbp_tmtimeline li .cbp_tmlabel {
   background: #3594cb;
@@ -40,11 +74,4 @@
 /* Set the color for every other triangle to be lighter */
 .cbp_tmtimeline li:nth-child(odd) .cbp_tmlabel:after {
   border-right-color: #6cbfee;
-}
-
-/* Remove auto styles from time elements */
-.cbp_tmtimeline {
-  margin-top: 30px;
-  list-style: none;
-  position: relative;
 }
