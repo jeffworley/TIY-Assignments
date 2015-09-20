@@ -1,20 +1,31 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 
-/*Set the background color, font and font color for the body*/
+/* Set the background color, font and font color for the body */
 body {
   background-color: #47a3da;
   font-family: 'Lato', Calibri, Arial, sans-serif;
   color: #fff;
 }
 
-/* Setting up default format for the header */
+/* Setting up default format for the anchor elements */
+a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+}
+
+/* Set the default format for the header */
 .container > header {
   width: 90%;
+  max-width: 69em; /* Realized this will affect viewport rendering */
   margin: 0 auto;
   padding: 2.5em 1.75em;
 }
 
-/*Set the font-weight for the Header span element*/
+/* Set the font-weight for the Header span element */
 .container .clearfix span {
   display: block;
   position: relative;
@@ -22,11 +33,11 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.5em;
   font-weight: 700;
-  padding: 0, 0, 0, 0;
+  padding: 0, 0, 0.6em, 0.1em;
 
 }
 
-/*Set the font-size and font-weight for the Header h1 element*/
+/* Set the font-size and font-weight for the Header h1 element */
 .container .clearfix h1 {
   font-size: 2.125em;
   margin: 0, 0, 0.5em 0;
@@ -34,7 +45,39 @@ body {
   font-weight: 400;
 }
 
+/* Setting up the default format for the nav elements */
+.container .clearfix nav {
+  float: right;
+  text-align: center;
+}
+
+.container .clearfix nav a {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+
 /* Explicitly indicating space to work with for div that holds the form */
 .main {
   width: 100%;
+  max-width: 100em;
+  margin: 0 auto;
+}
+
+/* Setting up default media inquiry for default desktop view */
+@media screen and (max-width: 55em) {
+  .container .clearfix h1,
+  .container .clearfix nav {
+    float: none;
+  }
+  .container .clearfix span,
+  .container .clearfix h1 {
+    text-align: center;
+  }
+  .container .clearfix nav {
+    margin: 0, auto;
+  }
+  .container .clearfix span {
+    text-indent: 30px;
+  }
 }
