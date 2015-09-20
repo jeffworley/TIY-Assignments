@@ -32,6 +32,22 @@
   color: #3594cd;
 }
 
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
+  color: #6cbfee;
+}
+
+/* Create and style the line between the time/date span elements and the ul li div elements */
+.cbp_tmtimeline:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background: #afdcf8;
+  left: 20%;
+  margin-left: -10px;
+}
+
 /* Set the style for the div information in each li within the ul */
 .cbp_tmtimeline li .cbp_tmlabel {
   background: #3594cb;
