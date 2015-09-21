@@ -1,41 +1,83 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 
-/*Set the background color, font and font color for the body*/
+/* Set the background color, font and font color for the body */
 body {
   background-color: #47a3da;
   font-family: 'Lato', Calibri, Arial, sans-serif;
   color: #fff;
 }
 
-/*Set the font-weight for the Header span element*/
-.container .clearfix span {
-  font-weight: 700;
+/* Setting up default format for the anchor elements */
+a {
+  color: #f0f0f0;
+  text-decoration: none;
 }
 
-/*Set the font-size and font-weight for the Header h1 element*/
+a:hover {
+  color: #000;
+}
+
+/* Set the default format for the header */
+.container > header {
+  width: 90%;
+  max-width: 69em; /* Realized this will affect viewport rendering */
+  margin: 0 auto;
+  padding: 2.5em 1.75em;
+}
+
+/* Set the font-weight for the Header span element */
+.container .clearfix span {
+  display: block;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-weight: 700;
+  padding: 0, 0, 0.6em, 0.1em;
+
+}
+
+/* Set the font-size and font-weight for the Header h1 element */
 .container .clearfix h1 {
   font-size: 2.125em;
+  margin: 0, 0, 0.5em 0;
+  text-align: center;
   font-weight: 400;
 }
 
-/*Set the font-size and display for the form labels*/
-.cbp-mc-form {
-  display: block;
-  font-size: 1.1em;
+/* Setting up the default format for the nav elements */
+.container .clearfix nav {
+  float: right;
+  text-align: center;
 }
 
-/*Set the font-size, font-color,background color and display for the form elements*/
-.cbp-mc-form input,
-.cbp-mc-form textarea,
-.cbp-mc-form select {
-  font-size: 1.4em;
-  color: #fff;
-  background-color: #47a3da;
-  display: block;
+.container .clearfix nav a {
+  display: inline-block;
+  position: relative;
+  text-align: left;
 }
 
-/*Set the borders for the form input and textarea elements*/
-.cbp-mc-form input,
-.cbp-mc-form textarea {
-  border: 3px solid #fff;
+/* Explicitly indicating space to work with for div that holds the form */
+.main {
+  width: 100%;
+  max-width: 100em;
+  margin: 0 auto;
+}
+
+/* Setting up default media inquiry for default desktop view */
+@media screen and (max-width: 55em) {
+  .container .clearfix h1,
+  .container .clearfix nav {
+    float: none;
+  }
+  .container .clearfix span,
+  .container .clearfix h1 {
+    text-align: center;
+  }
+  .container .clearfix nav {
+    margin: 0, auto;
+  }
+  .container .clearfix span {
+    text-indent: 30px;
+  }
 }

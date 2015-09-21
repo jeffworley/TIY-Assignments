@@ -1,0 +1,118 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+body {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #47a3da;
+}
+
+.main,
+.container .clearfix {
+  width: 90%;
+  max-width: 69em;
+  margin: 0 auto;
+  padding-right: 1.75em;
+  padding-bottom: 3em;
+  padding-left: 1.75em;
+}
+
+.container .clearfix {
+  margin-bottom: 3em;
+}
+
+.container .clearfix > span {
+  display: block;
+  position: relative;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  padding-top: 1em;
+  padding-left: 0.1em;
+}
+
+.container .clearfix h1 {
+  font-size: 2em;
+  line-height: 1.3em;
+  margin-bottom: 0.5em;
+  float: left;
+  font-weight: 400;
+}
+
+/* Move the view buttons to the right of their div */
+.container .clearfix nav {
+  float: right;
+  text-align: center;
+}
+
+/* Set border around the main div */
+.main #cbp-vm {
+  border: 3px solid #47a3da;
+  box-sizing: border-box;
+  padding-top: 4em;
+  padding-right: 2em;
+  padding-bottom: 4em;
+  padding-left: 2em;
+}
+
+/* Create border separating view buttons and li elements */
+.main .cbp-vm-options {
+  border-bottom: 3px solid #47a3da;
+  text-align: right;
+}
+
+/* Set style for first li element */
+#cbp-vm ul > li:first-of-type {
+  diplay: block;
+  box-sizing: border-box;
+  padding-top: 2em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+  padding-left: 1em;
+  text-align: center;
+}
+
+/* Make image anchors align */
+#cbp-vm ul li a {
+  display: block;
+}
+
+/* Make h3 elements align and style them */
+#cbp-vm ul li h3 {
+  display: block;
+  font-size: 2em;
+}
+
+/* Style first li div */
+#cbp-vm ul li div:first-of-type {
+  display: block;
+  font-size: 1.5em;
+  color: grey;
+}
+
+/* Style the p element in the second div element within li elements */
+#cbp-vm ul li div {
+  display: block;
+  font-size: 1.2em;
+}
+
+#cbp-vm ul li .cbp-vm-add {
+  display: inline-block;
+  background-color: #47a3da;
+  font-size: 1.5em;
+  width: auto;
+  padding-top: 15px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+}
+
+/* Create grid view by creating three columns of li elements with inline-block */
+#cbp-vm ul li {
+  display: inline-block;
+  width: 33%;
+  box-sizing: border-box;
+  padding-top: 2em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+  padding-left: 1em;
+  text-align: center;
+}
