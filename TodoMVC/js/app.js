@@ -11,6 +11,22 @@
 	 * Create li elements with nested anchor tags that refer to another location within the application.
 	 */
 
+//Create an empty array to house created tasks
+var taskList = [];
+
+//Create variable to store DOM element we want to work with
+var currentNewTask = document.querySelector('input.new-todo');
+
+//Tell element captured above to listen for a 'change' event
+currentNewTask.addEventListener('change', function(){
+	// Tracer Bullet
+	//console.log('you did something');
+
+	// Store new task in temp variable to be printed out to the console
+	var curTask = currentNewTask.value;
+	console.log(curTask);
+});
+
 // I can edit a task on my todo list so that I can correct typos.
 	/* Target li element.
 	 * Assign an event listener to the li element that listens for the doubleclick event.
@@ -54,7 +70,7 @@
 	 * Assign an event listener to each anchor element targeted that listens for a click event.
 	 * Tell callback function that when the each anchor element is clicked to toggle the class 'selected' to the clicked anchor element and remove it from the others.
 	 */
-	 
+
 
 (function (window) {
 	'use strict';
