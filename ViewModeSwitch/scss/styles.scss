@@ -5,114 +5,203 @@ body {
   color: #47a3da;
 }
 
-.main,
-.container .clearfix {
-  width: 90%;
-  max-width: 69em;
-  margin: 0 auto;
-  padding-right: 1.75em;
-  padding-bottom: 3em;
-  padding-left: 1.75em;
-}
+.container {
 
-.container .clearfix {
-  margin-bottom: 3em;
-}
+  .clearfix {
 
-.container .clearfix > span {
-  display: block;
-  position: relative;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-  padding-top: 1em;
-  padding-left: 0.1em;
-}
+    width: 90%;
+    max-width: 69em;
+    margin: 0 auto;
+    padding-right: 1.75em;
+    padding-bottom: 3em;
+    padding-left: 1.75em;
+    margin-bottom: 3em;
 
-.container .clearfix h1 {
-  font-size: 2em;
-  line-height: 1.3em;
-  margin-bottom: 0.5em;
-  float: left;
-  font-weight: 400;
-}
+    span {
 
-/* Move the view buttons to the right of their div */
-.container .clearfix nav {
-  float: right;
-  text-align: center;
+      display: block;
+      position: relative;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5em;
+      padding-top: 1em;
+      padding-left: 0.1em;
+
+    }
+
+    h1 {
+
+      font-size: 2em;
+      line-height: 1.3em;
+      margin-bottom: 0.5em;
+      float: left;
+      font-weight: 400;
+    }
+
+    /* Move the view buttons to the right of their div */
+    nav {
+
+      float: right;
+      text-align: center;
+      font-size: 0;
+
+    }
+
+  }
+
 }
 
 /* Set border around the main div */
-.main #cbp-vm {
+#cbp-vm {
+
   border: 3px solid #47a3da;
   box-sizing: border-box;
   padding-top: 4em;
   padding-right: 2em;
   padding-bottom: 4em;
   padding-left: 2em;
+
 }
 
 /* Create border separating view buttons and li elements */
-.main .cbp-vm-options {
-  border-bottom: 3px solid #47a3da;
-  text-align: right;
-}
+.main {
 
-/* Set style for first li element */
-#cbp-vm ul > li:first-of-type {
-  diplay: block;
-  box-sizing: border-box;
-  padding-top: 2em;
-  padding-right: 1em;
-  padding-bottom: 2em;
-  padding-left: 1em;
-  text-align: center;
-}
+  .cbp-vm-options {
 
-/* Make image anchors align */
-#cbp-vm ul li a {
-  display: block;
-}
+    border-bottom: 3px solid #47a3da;
+    text-align: right;
 
-/* Make h3 elements align and style them */
-#cbp-vm ul li h3 {
-  display: block;
-  font-size: 2em;
-}
+  }
 
-/* Style first li div */
-#cbp-vm ul li div:first-of-type {
-  display: block;
-  font-size: 1.5em;
-  color: grey;
-}
+  /* For Grid View */
+  .cbp-vm-view-grid {
 
-/* Style the p element in the second div element within li elements */
-#cbp-vm ul li div {
-  display: block;
-  font-size: 1.2em;
-}
+    /* Set style for first li element */
+    ul {
 
-#cbp-vm ul li .cbp-vm-add {
-  display: inline-block;
-  background-color: #47a3da;
-  font-size: 1.5em;
-  width: auto;
-  padding-top: 15px;
-  padding-right: 25px;
-  padding-bottom: 15px;
-  padding-left: 25px;
-}
+      li {
 
-/* Create grid view by creating three columns of li elements with inline-block */
-#cbp-vm ul li {
-  display: inline-block;
-  width: 33%;
-  box-sizing: border-box;
-  padding-top: 2em;
-  padding-right: 1em;
-  padding-bottom: 2em;
-  padding-left: 1em;
-  text-align: center;
+        &:first-of-type {
+          display: block;
+          box-sizing: border-box;
+          padding-top: 2em;
+          padding-right: 1em;
+          padding-bottom: 2em;
+          padding-left: 1em;
+          text-align: center;
+        }
+
+        /* Create grid view by creating three columns of li elements with inline-block */
+        display: inline-block;
+        width: 33%;
+        box-sizing: border-box;
+        padding-top: 2em;
+        padding-right: 1em;
+        padding-bottom: 2em;
+        padding-left: 1em;
+        text-align: center;
+
+        /* Make image anchors align */
+        a {
+
+          display: block;
+
+        }
+
+        /* Make h3 elements align and style them */
+        h3 {
+
+          display: block;
+          font-size: 2em;
+        }
+
+        /* Style first li div */
+        div {
+
+          /* Style the p element in the second div element within li elements */
+          display: block;
+          font-size: 1.2em;
+
+          &:first-of-type {
+
+            display: block;
+            font-size: 1.5em;
+            color: grey;
+          }
+
+        }
+
+      }
+
+      .cbp-vm-add {
+
+        display: inline-block;
+        background-color: #47a3da;
+        font-size: 1.5em;
+        width: auto;
+        padding-top: 15px;
+        padding-right: 25px;
+        padding-bottom: 15px;
+        padding-left: 25px;
+      }
+
+    }
+
+  }
+
+  .cbp-vm-view-list {
+
+    /* List view */
+    li {
+	    padding-top: 1.5%;
+      padding-right: 0;
+      padding-bottom: 1.5%;
+      padding-left: 0;
+	    white-space: nowrap;
+    }
+
+    .cbp-vm-image,
+    .cbp-vm-title,
+    .cbp-vm-details,
+    .cbp-vm-price,
+    .cbp-vm-add {
+	    display: inline-block;
+	    vertical-align: middle;
+    }
+
+    .cbp-vm-image {
+	    width: 10%;
+    }
+
+    .cbp-vm-title {
+	    font-size: 1.3em;
+	    padding-top: 0;
+      padding-right: 0.5%;
+      padding-bottom: 0;
+      padding-left: 0.5%;
+	    white-space: normal;
+	    width: 23%;
+    }
+
+    .cbp-vm-price {
+	    font-size: 1.3em;
+	    width: 10%;
+    }
+
+    .cbp-vm-details {
+	    width: 40%;
+	    padding-top: 0;
+      padding-right: 0.5%;
+      padding-bottom: 0;
+      padding-left: 0.5%;
+	    overflow: hidden;
+	    white-space: normal;
+    }
+
+    .cbp-vm-add {
+	    margin: 0;
+    }
+
+  }
+
 }
