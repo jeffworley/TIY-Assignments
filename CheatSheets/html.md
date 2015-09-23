@@ -53,6 +53,17 @@ A generic page division that should only be used if no other, more semantic choi
 
 . . .
 
+### Lists:
+A way of organizing a collection of items.
+
+#### `<ul>`:
+The 'unordered list' is used to hold a list of or collection of items whose order don't matter.  The items are typically represented with a preceeding bullet point.  The items in the list are nested within the above `<ul>` tag and are denoted by use of a `<li>` (list item) tag.  Both tags require closing tags.
+#### `<ol>`:
+The 'ordered list' is used to hold a list of or collection of items whose order matters.  The items are typically represented with a preceeding numeral.  This of course can be changed as need dictates with use of the `css list-style-type` selector.  The items in the list are nested within the above `<ol>` tag and are denoted by use of the `<li>` (list item) tag.  Both tags require closing tags.
+#### `<dl>`:
+The 'description list' is used to hold a list of terms and definitions and are great for glossary's and metadata information.  In order to clearly state the enclosed list of data you use the `<dt>` (description term) and `<dd>` (description definition) tags nested within the above `<dl>` tag.  Just like the other lists these require closing tags for all elements.
+
+
 ###### Footnotes
 
 [1](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flow_content)
