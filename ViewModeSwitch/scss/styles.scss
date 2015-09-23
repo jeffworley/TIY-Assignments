@@ -77,77 +77,74 @@ body {
   .cbp-vm-view-grid {
 
     /* Set style for first li element */
-    ul {
 
-      li {
+    li {
 
-        &:first-of-type {
-          display: block;
-          box-sizing: border-box;
-          padding-top: 2em;
-          padding-right: 1em;
-          padding-bottom: 2em;
-          padding-left: 1em;
-          text-align: center;
-        }
-
-        /* Create grid view by creating three columns of li elements with inline-block */
-        display: inline-block;
-        width: 33%;
+      &:first-of-type {
+        display: block;
         box-sizing: border-box;
         padding-top: 2em;
         padding-right: 1em;
         padding-bottom: 2em;
         padding-left: 1em;
         text-align: center;
+      }
 
-        /* Make image anchors align */
-        a {
+      /* Create grid view by creating three columns of li elements with inline-block */
+      display: inline-block;
+      width: 33%;
+      box-sizing: border-box;
+      padding-top: 2em;
+      padding-right: 1em;
+      padding-bottom: 2em;
+      padding-left: 1em;
+      text-align: center;
+
+      /* Make image anchors align */
+      a {
+
+        display: block;
+
+      }
+
+      /* Make h3 elements align and style them */
+      h3 {
+
+        display: block;
+        font-size: 2em;
+      }
+
+      /* Style first li div */
+      div {
+
+        /* Style the p element in the second div element within li elements */
+        display: block;
+        font-size: 1.2em;
+
+        &:first-of-type {
 
           display: block;
-
-        }
-
-        /* Make h3 elements align and style them */
-        h3 {
-
-          display: block;
-          font-size: 2em;
-        }
-
-        /* Style first li div */
-        div {
-
-          /* Style the p element in the second div element within li elements */
-          display: block;
-          font-size: 1.2em;
-
-          &:first-of-type {
-
-            display: block;
-            font-size: 1.5em;
-            color: grey;
-          }
-
+          font-size: 1.5em;
+          color: grey;
         }
 
       }
 
-      .cbp-vm-add {
+    } // li
 
-        display: inline-block;
-        background-color: #47a3da;
-        font-size: 1.5em;
-        width: auto;
-        padding-top: 15px;
-        padding-right: 25px;
-        padding-bottom: 15px;
-        padding-left: 25px;
-      }
+    .cbp-vm-add {
 
+      display: inline-block;
+      background-color: #47a3da;
+      font-size: 1.5em;
+      width: auto;
+      padding-top: 15px;
+      padding-right: 25px;
+      padding-bottom: 15px;
+      padding-left: 25px;
     }
 
-  }
+  } // .cbp-vm-view-grid
 
   .cbp-vm-view-list {
 
