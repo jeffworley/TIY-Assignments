@@ -94,6 +94,84 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+ @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+ body {
+
+   font-family: 'Lato', Calibri, Arial, sans-serif;
+   color: #47a3da;
+   margin-top: 5%;
+   margin-right: 5%;
+   margin-bottom: 5%;
+   margin-left: 5%;
+
+   header {
+
+     display: block;
+
+     span {
+
+       font-size: 1em;
+       font-weight: 700;
+       letter-spacing: 0.4em;
+
+     }
+
+     h1 {
+
+       font-size: 2.9em;
+       font-weight: 400;
+
+     }
+
+     nav {
+
+       display: inline;
+       float: right;
+
+     }
+
+   }
+
+   ul {
+
+     list-style-type: none;
+     margin-top: 5%;
+     padding-top: 0.25%;
+
+     h3 {
+
+       font-size: 2.5em;
+       font-weight: 300;
+       border-bottom: 1px solid lightgrey;
+
+     }
+
+     p {
+
+       font-size: 1.2em;
+       font-weight: 300;
+       color: lightgrey;
+
+     }
+
+     h4 {
+
+       font-size: 1.5em;
+       font-weight: 300;
+
+     }
+
+     h5 {
+
+         font-size: 1.1em;
+         color: lightgrey;
+
+     }
+
+   }
+
+ }
 
 
 
