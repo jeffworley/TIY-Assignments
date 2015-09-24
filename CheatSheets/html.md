@@ -64,6 +64,27 @@ The 'ordered list' is used to hold a list of or collection of items whose order 
 The 'description list' is used to hold a list of terms and definitions and are great for glossary's and metadata information.  In order to clearly state the enclosed list of data you use the `<dt>` (description term) and `<dd>` (description definition) tags nested within the above `<dl>` tag.  Just like the other lists these require closing tags for all elements.
 
 
+### Forms:
+Groups of elements that users can fill out and submit to websites
+
+#### [`<form>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form):
+The HTML <form> element represents a document section that contains interactive controls to submit information to a web server.
+
+##### Attributes [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes):
+* [`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input):
+The HTML <input> element is used to create interactive controls for web-based forms in order to accept data from the user. How an <input> works varies considerably depending on the value of its type attribute.
+* [`<fieldset>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset):
+The HTML <fieldset> element is used to group several controls as well as labels (<label>) within a web form.
+* [`<legend>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend):
+The HTML <legend> Element (or HTML Legend Field Element) represents a caption for the content of its parent <fieldset>.
+* [`<select>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select):
+The HTML select (<select>) element represents a control that presents a menu of options. The options within the menu are represented by <option> elements, which can be grouped by <optgroup> elements. Options can be pre-selected for the user.
+* [`<textarea>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea):
+The HTML <textarea> element represents a multi-line plain-text editing control.
+* [`<option>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option):
+In a Web form, the HTML <option> element is used to create a control representing an item within a <select>, an <optgroup> or a <datalist> HTML5 element.
+
+
 ###### Footnotes
 
 [1](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories#Flow_content)
