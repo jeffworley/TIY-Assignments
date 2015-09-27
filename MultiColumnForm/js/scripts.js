@@ -1,3 +1,4 @@
+/*
 // Assign variables that allow us to access each form element.
 var firstName = document.getElementById('first_name');
 var lastName = document.getElementById('last_name');
@@ -15,6 +16,7 @@ var power = document.getElementById('power');
 var weapon = document.getElementById('weapon');
 var comments = document.getElementById('comments');
 var submitBtn = document.querySelector('.cbp-mc-submit');
+*/
 
 // Create variables to store the input of each form element in.
 var firstNameInput = "empty";
@@ -33,6 +35,16 @@ var powerInput = "empty";
 var weaponInput = "empty";
 var commentsInput = "empty";
 
+$("input[name='firstName']").change(function() {
+  // Tracer Bullet!!!
+  console.log("Made edit in first name!!!");
+
+  // Capture input of firstName.
+  firstNameInput = this.value;
+
+});
+
+/*
 // Assign event listeners for each form element to grab the input when it hears the change event.
 firstName.addEventListener('change', function(){
 
@@ -195,6 +207,7 @@ comments.addEventListener('change', function(){
   commentsInput = comments.value;
 
 });
+*/
 
 submitBtn.addEventListener('click', function(){
 
