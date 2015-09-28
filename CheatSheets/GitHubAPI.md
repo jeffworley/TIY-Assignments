@@ -3,8 +3,10 @@
 ## [Authentication](https://developer.github.com/v3/#authentication)
 
 > Do I need to authenticate?
+- Yes! This is needed to prevent the accidental leakage of private repositories to unauthorized users.
 
 > What can I do with an unauthenticated request?
+- 
 
 > What _can't_ I do with an unauthenticated request?
 
