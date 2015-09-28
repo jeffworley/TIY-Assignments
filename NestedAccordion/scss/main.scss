@@ -145,6 +145,13 @@ textarea {
        font-weight: 300;
        border-bottom: 1px solid lightgrey;
 
+       .slidUp {
+
+         height: 0;
+         overflow: hidden;
+
+       }
+
      }
 
      p {
@@ -160,12 +167,26 @@ textarea {
        font-size: 1.5em;
        font-weight: 300;
 
+       .slidUp {
+
+         height: 0;
+         overflow: hidden;
+
+       }
+
      }
 
      h5 {
 
          font-size: 1.1em;
          color: lightgrey;
+
+         .slidUp {
+
+           height: 0;
+           overflow: hidden;
+
+         }
 
      }
 
