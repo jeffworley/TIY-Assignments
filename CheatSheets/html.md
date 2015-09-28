@@ -70,19 +70,54 @@ Groups of elements that users can fill out and submit to websites
 #### [`<form>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form):
 The HTML <form> element represents a document section that contains interactive controls to submit information to a web server.
 
-##### Attributes [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes):
-* [`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input):
+#### Attributes [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes):
+
+##### [`<input>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input):
 The HTML <input> element is used to create interactive controls for web-based forms in order to accept data from the user. How an <input> works varies considerably depending on the value of its type attribute.
-* [`<fieldset>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset):
+
+##### [`<fieldset>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset):
 The HTML <fieldset> element is used to group several controls as well as labels (<label>) within a web form.
-* [`<legend>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend):
+
+##### [`<legend>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend):
 The HTML <legend> Element (or HTML Legend Field Element) represents a caption for the content of its parent <fieldset>.
-* [`<select>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select):
+
+##### [`<select>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select):
 The HTML select (<select>) element represents a control that presents a menu of options. The options within the menu are represented by <option> elements, which can be grouped by <optgroup> elements. Options can be pre-selected for the user.
-* [`<textarea>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea):
+
+##### [`<textarea>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea):
 The HTML <textarea> element represents a multi-line plain-text editing control.
-* [`<option>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option):
+
+##### [`<option>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option):
 In a Web form, the HTML <option> element is used to create a control representing an item within a <select>, an <optgroup> or a <datalist> HTML5 element.
+
+### Tables:
+Representations of data in two or more dimensions.
+
+#### [`<table>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table):
+
+##### [`<caption>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption):
+The HTML <caption> Element (or HTML Table Caption Element) represents the title of a table. Though it is always the first descendant of a <table>, its styling, using CSS, may place it elsewhere, relative to the table.
+
+##### [`<colgroup>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup):
+The HTML Table Column Group Element (<colgroup>) defines a group of columns within a table.
+
+##### [`<thead>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead):
+The HTML Table Head Element (<thead>) defines a set of rows defining the head of the columns of the table.
+
+##### [`<tbody>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody):
+The HTML Table Body Element (<tbody>) defines one or more <tr> element data-rows to be the body of its parent <table> element (as long as no <tr> elements are immediate children of that table element.)  In conjunction with a preceding <thead> and/or <tfoot> element, <tbody> provides additional semantic information for devices such as printers and displays. Of the parent table's child elements, <tbody> represents the content which, when longer than a page, will most likely differ for each page printed; while the content of <thead> and <tfoot> will be the same or similar for each page printed. For displays, <tbody> will enable separate scrolling of the <thead>, <tfoot>, and <caption> elements of the same parent <table> element.  Note that unlike the <thead>, <tfoot>, and <caption> elements however, multiple <tbody> elements are permitted (if consecutive), allowing the data-rows in long tables to be divided into different sections, each separately formatted as needed.
+
+##### [`<tfoot>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot):
+The HTML Table Foot Element (<tfoot>) defines a set of rows summarizing the columns of the table.
+
+##### [`<tr>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr):
+The HTML Table Row Element (<tr>) defines a row of cells in a table. Those can be a mix of <td> and <th> elements.
+
+##### [`<td>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td):
+The Table cell HTML element (<td>) defines a cell of a table that contains data. It participates in the table model.
+
+##### [`<th>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th):
+The HTML Table Header Cell Element (<th>) defines a cell that is a header for a group of cells of a table. The group of cells that the header refers to is defined by the scope and headers attribute.
 
 
 ###### Footnotes

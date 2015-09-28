@@ -1,3 +1,4 @@
+/*
 // Assign variables that allow us to access each form element.
 var firstName = document.getElementById('first_name');
 var lastName = document.getElementById('last_name');
@@ -15,6 +16,7 @@ var power = document.getElementById('power');
 var weapon = document.getElementById('weapon');
 var comments = document.getElementById('comments');
 var submitBtn = document.querySelector('.cbp-mc-submit');
+*/
 
 // Create variables to store the input of each form element in.
 var firstNameInput = "empty";
@@ -33,6 +35,104 @@ var powerInput = "empty";
 var weaponInput = "empty";
 var commentsInput = "empty";
 
+// When input elements are altered, assign that value to the specified variable.
+
+$("input[name='firstName']").change(function() {
+  // Tracer Bullet!!!
+  console.log("Made edit in first name!!!");
+
+  // Capture input of firstName.
+  firstNameInput = this.value;
+
+});
+
+$("input[name='lastName']").change(function() {
+  // Tracer Bullet!!!
+  console.log("Made edit in last name!!!");
+
+  // Capture input of lastName.
+  lastNameInput = this.value;
+
+});
+
+$("input[name='email']").change(function(){
+  emailInput = this.value;
+});
+
+$("input[name='phoneNumber']").change(function(){
+  phoneInput = this.value;
+});
+
+$("input[name='catsName']").change(function(){
+  catNameInput = this.value;
+});
+
+$("input[name='favoriteGadget']").change(function(){
+  gadgetInput = this.value;
+});
+
+$("input[name='favoriteDrink']").change(function(){
+  drinkInput = this.value;
+});
+
+$("input[name='specialPower']").change(function(){
+  powerInput = this.value;
+});
+
+$("input[name='weaponOfChoice']").change(function(){
+  weaponInput = this.value;
+});
+
+// When textarea elements are altered, assign that value to the specified variable.
+
+$("textarea[name='biography']").change(function(){
+  bioInput = this.value;
+});
+
+$("textarea[name='affiliations']").change(function(){
+  affiliationsInput = this.value;
+});
+
+$("textarea[name='comments']").change(function(){
+  commentsInput = this.value;
+});
+
+// When select elements are altered, assign that value to the specified variable.
+
+$("select[name='country']").change(function(){
+  countryInput = this.value;
+});
+
+$("select[name='occupation']").change(function(){
+  occupationInput = this.value;
+});
+
+$("select[name='typeOfTalent']").change(function(){
+  talentInput = this.value;
+});
+
+// Log the value of all variables to the console when submit button is clicked and prevent page refresh.
+
+$("button[name='submit']").click(function(){
+  event.preventDefault();
+  console.log("First Name: ", firstNameInput);
+  console.log("Last Name: ", lastNameInput);
+  console.log("Email Address: ", emailInput);
+  console.log("Country: ", countryInput);
+  console.log("Biography: ", bioInput);
+  console.log("Phone Number: ", phoneInput);
+  console.log("Affiliations: ", affiliationsInput);
+  console.log("Occupation: ", occupationInput);
+  console.log("Cat's Name: ", catNameInput);
+  console.log("Favorite Gadget: ", gadgetInput);
+  console.log("Type of Talent: ", talentInput);
+  console.log("Favorite Drink: ", drinkInput);
+  console.log("Special Power: ", powerInput);
+  console.log("Weapon of Choice: ", weaponInput);
+  console.log("Comments: ", commentsInput);
+});
+
+/*
 // Assign event listeners for each form element to grab the input when it hears the change event.
 firstName.addEventListener('change', function(){
 
@@ -195,6 +295,7 @@ comments.addEventListener('change', function(){
   commentsInput = comments.value;
 
 });
+*/
 
 submitBtn.addEventListener('click', function(){
 
