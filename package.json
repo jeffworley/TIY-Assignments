@@ -4,7 +4,8 @@
   "description": "",
   "main": "BasicCalculator.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "bs": "browser-sync start --server --files='*.html, js/*.js, css/*.css'"
   },
   "repository": {
     "type": "git",
