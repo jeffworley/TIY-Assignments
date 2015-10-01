@@ -371,5 +371,36 @@ https://api.github.com/repos/{/owner}/{:repo}/issues/{/number}/comments{/this ta
 
 This is our first post specific task, so I am not positive this works.
 
+# [jQuery API](http://api.jquery.com/);
+
+> How can I use the jQuery API to...
+
+* get the HTML contents of an element?
+
+```
+$("/element tag").content(function(){
+  return
+)};
+```
+
+In the above example you would fill in the `("/element tag")` section with the html element you want to grab and then invoke the content method with an annonymous function to catch your returned value.  The returned value is the child which in our case ideally would be text.
+
+* create a new HTML element?
+
+```
+$("/element tag").appendTo("/<some tag>some content</some tag>");
+```
+
+The above example grabs and html element and inserts the new html element and content within the selected html element.
+
+* add an HTML element to the page?
+
+```
+$("/element tag").add("/<some tag>some content</some tag>");
+```
+
+The above example grabs an html element and adds the new html element and content after the selected html element.
+
+I am sure there are many other ways to do this as well.
 
 
