@@ -341,3 +341,35 @@ Each of the above fields are objects.  In particular they are dictionary objects
 
 Please see the list of all possible `type` values directly under the "when fetching public events" header.
 
+> How can I use the Github API to...
+
+* get all the comments for a particular issue?
+
+The GET way:
+```
+GET /repos/:owner/:repo/issues/:number/comments
+```
+
+The endpoint way:
+```
+https://api.github.com/repos/{/owner}/issues/{/issue number}/comments
+```
+
+There are no defaults for the above and comments are listed in acending order ID.
+
+* add a comment to an issue?
+
+The POST way:
+```
+POST /repos/:owner/:repo/issues/:number/comments
+```
+
+The endpoint way:
+```
+https://api.github.com/repos/{/owner}/{:repo}/issues/{/number}/comments{/this takes the string comment you want to add}
+```
+
+This is our first post specific task, so I am not positive this works.
+
+
+
