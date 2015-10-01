@@ -403,4 +403,13 @@ The above example grabs an html element and adds the new html element and conten
 
 I am sure there are many other ways to do this as well.
 
+# [Lodash API](https://lodash.com/docs/)
+
+> How can I use the Lodash API to...
+
+* replace placeholders with values from an object?
+
+At this time I believe I have an idea of what lodash is used for but could not grasp a good enough understanding to find the answer to the above and below questions...
+
+* repeat code for every item of an array?
 
