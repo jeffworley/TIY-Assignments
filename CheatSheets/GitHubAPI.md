@@ -341,3 +341,75 @@ Each of the above fields are objects.  In particular they are dictionary objects
 
 Please see the list of all possible `type` values directly under the "when fetching public events" header.
 
+> How can I use the Github API to...
+
+* get all the comments for a particular issue?
+
+The GET way:
+```
+GET /repos/:owner/:repo/issues/:number/comments
+```
+
+The endpoint way:
+```
+https://api.github.com/repos/{/owner}/issues/{/issue number}/comments
+```
+
+There are no defaults for the above and comments are listed in acending order ID.
+
+* add a comment to an issue?
+
+The POST way:
+```
+POST /repos/:owner/:repo/issues/:number/comments
+```
+
+The endpoint way:
+```
+https://api.github.com/repos/{/owner}/{:repo}/issues/{/number}/comments{/this takes the string comment you want to add}
+```
+
+This is our first post specific task, so I am not positive this works.
+
+# [jQuery API](http://api.jquery.com/);
+
+> How can I use the jQuery API to...
+
+* get the HTML contents of an element?
+
+```
+$("/element tag").content(function(){
+  return
+)};
+```
+
+In the above example you would fill in the `("/element tag")` section with the html element you want to grab and then invoke the content method with an annonymous function to catch your returned value.  The returned value is the child which in our case ideally would be text.
+
+* create a new HTML element?
+
+```
+$("/element tag").appendTo("/<some tag>some content</some tag>");
+```
+
+The above example grabs and html element and inserts the new html element and content within the selected html element.
+
+* add an HTML element to the page?
+
+```
+$("/element tag").add("/<some tag>some content</some tag>");
+```
+
+The above example grabs an html element and adds the new html element and content after the selected html element.
+
+I am sure there are many other ways to do this as well.
+
+# [Lodash API](https://lodash.com/docs/)
+
+> How can I use the Lodash API to...
+
+* replace placeholders with values from an object?
+
+At this time I believe I have an idea of what lodash is used for but could not grasp a good enough understanding to find the answer to the above and below questions...
+
+* repeat code for every item of an array?
+
