@@ -1,0 +1,23 @@
+{
+  "name": "tiy-assignments",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jeffworley/TIY-Assignments",
+  "authors": [
+    "jeffworley <sirwhirls@gmail.com>"
+  ],
+  "description": "release--0.0.0",
+  "main": "index.html",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

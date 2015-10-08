@@ -1,11 +1,12 @@
 {
-  "name": "06--temple-of-dom",
-  "version": "0.0.1",
-  "description": "",
+  "name": "release--0.0.0",
+  "version": "0.0.0",
+  "description": "tiy-assignments",
   "main": "BasicCalculator.js",
   "scripts": {
     "test": "mocha",
-    "bs": "browser-sync start --server --files='*.html, js/*.js, css/*.css'"
+    "bs": "browser-sync start --server --files='src/*.html, src/js/*.js, src/css/*.css'",
+    "sass": "node-sass --output-style expanded src/scss/main.scss src/css/main.css"
   },
   "repository": {
     "type": "git",
