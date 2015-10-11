@@ -106,6 +106,7 @@ body {
   &.open {
 
     background-color: $main-font-color;
+    padding: 3% 0 6% 0;
 
     // Not sure why this isn't overwritting the font color...
     &> a {
