@@ -1,11 +1,11 @@
 {
   "name": "dropdownmenu",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "dropdownmenu",
   "main": "index.html",
   "scripts": {
     "test": "browser-sync start --server --startPath tests.html --files='js/*js'",
-    "bs": "browser-sync start --server --startPath='src/index.html' --files='*.html, css/*.css, js/*.js'",
+    "bs": "browser-sync start --server --startPath='index.html' --files='*.html, css/*.css, js/*.js'",
     "sass": "node-sass --output-style expanded scss/main.scss css/main.css"
   },
   "repository": {
@@ -13,5 +13,8 @@
     "url": "https://github.com/tiy-assignments"
   },
   "author": "jeffworley (sirwhirls@gmail.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.9.11"
+  }
 }
