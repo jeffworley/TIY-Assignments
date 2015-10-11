@@ -157,7 +157,7 @@ body {
 
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
   .container {
 
     header {
@@ -233,6 +233,35 @@ body {
         }
 
       }
+
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 950px) {
+  .container {
+
+    header {
+
+      h1 {
+        text-align: left;
+      }
+
+      span {
+        text-align: left;
+      }
+
+    }
+
+  }
+
+  // Top level menu...
+  .main-container {
+
+    #top-level-menu {
+      text-align: left;
 
     }
 
