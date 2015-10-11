@@ -123,16 +123,17 @@ body {
       width: 100%;
 
       .sl-inner {
+        box-sizing: border-box;
         width: 100%;
         float: left;
-        padding: 0 3% 0;
+        padding: 0 5% 0;
         margin: 2% 0 2% 0;
         color: white;
 
         h4 {
           color: #afdefa;
           margin: 0;
-          padding: 2% 0 0 1%;
+          padding: 2% 0 2% 0;
           font-size: 150%;
           font-weight: 300;
         }
