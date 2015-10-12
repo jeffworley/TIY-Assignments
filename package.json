@@ -1,12 +1,12 @@
 {
-  "name": "release--0.0.0",
-  "version": "0.0.0",
+  "name": "release--0.0.2",
+  "version": "0.0.2",
   "description": "tiy-assignments",
-  "main": "BasicCalculator.js",
+  "main": "index.html",
   "scripts": {
     "test": "mocha",
-    "bs": "browser-sync start --server --files='src/*.html, src/js/*.js, src/css/*.css'",
-    "sass": "node-sass --output-style expanded src/scss/main.scss src/css/main.css"
+    "bs": "browser-sync start --server --directory",
+    "sass": "node-sass --output-style expanded DropDownMenu/scss/main.scss DropDownMenu/css/main.css"
   },
   "repository": {
     "type": "git",
