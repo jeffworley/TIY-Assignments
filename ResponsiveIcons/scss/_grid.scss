@@ -1,0 +1,205 @@
+//Copied tranform and transition code from the reference resource...  Still do not understand what they are doing...
+
+$main-color: #47a3da;
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: $main-color;
+
+  header {
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2.875em 1.875em 1.875em;
+    //outline: 3px solid red;
+
+    h1 {
+      font-size: 2.125em;
+      line-height: 1.3;
+      margin-bottom: 0.6em;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    span {
+      display: block;
+      position: relative;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5em;
+      padding-bottom: 0.6em;
+      padding-left: 0.1em;
+      text-align: center;
+    }
+
+  }
+
+  .main {
+    width: 90%;
+    padding: 1%;
+    margin: 0 auto;
+
+    #icon-grid {
+      list-style-type: none;
+      padding-bottom: 0.5em;
+      margin: 0;
+      //outline: 3px solid blue;
+
+      &:before,
+      &:after {
+        content: " ";
+        display: table;
+      }
+
+      li {
+        width: 100%;
+        height: 420px;
+        text-align: center;
+        border-top: 1px solid #ddd;
+        //outline: 3px solid green;
+
+        &:first-of-type {
+          border-top: none;
+        }
+
+        &:nth-child(3n-1),
+        &:nth-child(3n-2) {
+          box-shadow: 1px 0 0 #ddd;
+        }
+
+        a {
+          display: block;
+          height: 100%;
+          color: $main-color;
+          text-decoration: none;
+        }
+
+        .icon {
+          padding-top: 0.3em;
+          display: block;
+          -webkit-transition: -webkit-transform 0.2s;
+          transition: -moz-transform 0.2s;
+          transition: transform 0.2s;
+
+          &:before {
+            font-size: 14em;
+            speak: none;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+          }
+
+        }
+
+        h3 {
+          margin-top: 0.2em;
+          margin-bottom: 0.1em;
+          font-size: 2em;
+          position: relative;
+          -webkit-transition: margin-top 0.2s;
+          -moz-transition: margin-top 0.2s;
+          transition: transform 0.2s;
+
+          &:before {
+            content: '';
+            position: absolute;
+            background: $main-color;
+            width: 50%;
+            height: 6px;
+            top: 0;
+            left: 50%;
+            margin-top: -10px;
+            margin-left: -80px;
+            -webkit-transition: margin-top 0.2s;
+            -moz-transition: margin-top 0.2s;
+            transition: margin-top 0.2s;
+          }
+
+        }
+
+        &:hover h3 {
+          opacity: 1;
+          -webkit-transform: translateY(0px);
+          -moz-transform: translateY(0px);
+          -ms-transform: translateY(0px);
+          transform: translateY(0px);
+        }
+
+        a:hover {
+          background-color: $main-color;
+
+          &.icon {
+            -webkit-transform: translate(10px);
+            -moz-transform: translate(10px);
+            -ms-transform: translate(10px);
+            transform: translate(10px);
+
+            &:before,
+            &h3 {
+              color: white;
+            }
+
+          }
+
+          &h3 {
+            -webkit-transform: translateY(-30px);
+            -moz-transform: translateY(-30px);
+            -ms-tranform: translateY(-30px);
+            transform: translate(-30px);
+
+            &:before {
+              background-color: #fff;
+              margin-top: 80px;
+            }
+
+          }
+
+        }
+
+        .icon-category {
+          text-transform: uppercase;
+          display: inline-block;
+          font-size: 1%;
+          letter-spacing: 0.1em;
+          color: white;
+          -webkit-transform: translateY(10px);
+          -moz-transform: -moz-translateY(10px);
+          -ms-transform: -ms-translateY(10px);
+          transform: translateY(10px);
+          opacity: 0;
+          -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+          -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+          -webkit-transition: transform 0.3s, opacity 0.2s;
+        }
+
+        #shoe-icon:before {
+          content: "\0870";
+        }
+
+        #ribbon-icon:before {
+          content: "\0871";
+        }
+
+        #milk-icon:before {
+          content: "\0872";
+        }
+
+        #ice-cream-icon:before {
+          content: "\0873";
+        }
+
+        #glasses-icon:before {
+          content: "\0874";
+        }
+
+        #drum-icon:before {
+          content: "\0875";
+        }
+
+      }
+
+    }
+
+  }
+
+}
