@@ -1,0 +1,270 @@
+$main-font-color: #47a3da;
+
+// Courtesy of Nicolas Gallagher by way of Codrops.net...
+.site-constant:before,
+.site-constant:after {
+  content: " ";
+  display: table;
+}
+
+.site-constant:after {
+  clear: both;
+}
+
+
+// Site constant header...
+body {
+  color: $main-font-color;
+  font-family: 'Lato', sans-serif;
+
+  .container {
+
+    header {
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2.75em 1.75em 1.75em;
+    text-align: center;
+
+      h1 {
+        font-size: 2em;
+        line-height: 1.3;
+        float: left;
+        font-weight: 400;
+      }
+
+      span {
+        display: block;
+        position: relative;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.5em;
+      }
+
+    }
+
+  }
+
+}
+
+// Top level menu...
+.main-container {
+  box-sizing: border-box;
+
+  #top-level-menu {
+    width: 100%;
+    margin-top: 3%;
+    // Remember to overwrite this on tablet and desktop view...
+    //border-bottom: 4px solid $main-font-color;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    > ul {
+      box-sizing: border-box;
+      //width: 90%;
+      margin: 0 auto;
+      padding: 0 3%;
+
+      &> li {
+        display: inline-block;
+        width: 100%;
+        border-bottom: 4px solid $main-font-color;
+
+        &> a {
+          text-decoration: none;
+          font-weight: 700;
+          color: grey;
+          display: inline-block;
+          padding: 3% 6%;
+        }
+
+        // Not supported in mobile view or chrome according to MDN docs...
+        //&> a:hover {
+          //color: $main-font-color;
+        //}
+
+      }
+
+    }
+
+  }
+
+}
+
+// Sub Level Menu's...
+.trigger {
+
+  .sub-level-menu {
+    display: none;
+
+  }
+
+  &.open {
+
+    background-color: $main-font-color;
+    padding: 3% 0 6% 0;
+
+    // Not sure why this isn't overwritting the font color...
+    &> a {
+      color: white;
+      //outline: 2px solid red;
+    }
+
+    a {
+      color: white;
+    }
+
+    .sub-level-menu {
+      display: block;
+      background-color: $main-font-color;
+      width: 100%;
+
+      .sl-inner {
+        box-sizing: border-box;
+        width: 100%;
+        float: left;
+        padding: 0 5% 0;
+        margin: 2% 0 2% 0;
+        color: white;
+
+        h4 {
+          color: #afdefa;
+          margin: 0;
+          padding: 2% 0 2% 0;
+          font-size: 150%;
+          font-weight: 300;
+        }
+
+        ul {
+          list-style-type: none;
+
+          a {
+            line-height: 2;
+            text-decoration: none;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+
+    header {
+      width: 80%;
+
+      h1 {
+        float: none;
+        text-align: center;
+        width: 100%;
+      }
+
+    }
+
+  }
+
+  // Top level menu...
+  .main-container {
+
+    #top-level-menu {
+      // Remember to overwrite this on tablet and desktop view...
+      border-bottom: 4px solid $main-font-color;
+      text-align: center;
+
+      > ul {
+        box-sizing: border-box;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 3%;
+
+        &> li {
+          display: inline-block;
+          width: auto;
+          border-bottom: none;
+          padding: 1% 3%;
+
+        }
+
+      }
+
+    }
+
+  }
+
+  // Sub Level Menu's...
+  .trigger {
+
+    .sub-level-menu {
+      position: absolute;
+      width: 100%;
+      left: 0;
+
+    }
+
+    &.open {
+
+      .sub-level-menu {
+
+        .sl-inner {
+          box-sizing: border-box;
+          width: 33%;
+          margin: 0;
+          padding: 4% 7%;
+
+          h4 {
+            text-align: left;
+          }
+
+          ul {
+            text-align: left;
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 950px) {
+  .container {
+
+    header {
+
+      h1 {
+        text-align: left;
+      }
+
+      span {
+        text-align: left;
+      }
+
+    }
+
+  }
+
+  // Top level menu...
+  .main-container {
+
+    #top-level-menu {
+      text-align: left;
+
+    }
+
+  }
+
+}

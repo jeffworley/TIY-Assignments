@@ -1,12 +1,12 @@
 {
   "name": "responsiveicons",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "responsiveicons",
   "main": "index.html",
   "scripts": {
     "test": "browser-sync start --server --startPath tests.html --files='js/*js'",
     "bs": "browser-sync start --server --startPath='index.html' --files='*.html, css/*.css, js/*.js'",
-    "sass": "node-sass --output-style expanded scss/main.scss /css/main.css"
+    "sass": "node-sass --output-style expanded scss/main.scss css/main.css"
   },
   "repository": {
     "type": "git",
