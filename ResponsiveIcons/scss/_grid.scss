@@ -104,7 +104,7 @@ body {
             content: '';
             position: absolute;
             background: $main-color;
-            width: 50%;
+            width: 160px;
             height: 6px;
             top: 0;
             left: 50%;
@@ -198,6 +198,19 @@ body {
 
       }
 
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 650px) {
+  #icon-grid {
+
+    li {
+      width: 50%;
+      float: left;
+      //outline: 3px solid green;
     }
 
   }
