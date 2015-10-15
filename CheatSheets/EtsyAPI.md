@@ -26,3 +26,33 @@
 
 - What additional fields can be requested for each?
 
+* For the product list (category) page what data is needed from...
+  * the `Listing` resource?
+
+  * the `ListingImage` resource?
+
+  * the `Variations_*` resources?
+
+  * the `Category` resource?
+
+  * the `Shop` resource?
+
+* On the product detail page what data is needed from...
+  * the `Listing` resource?
+
+  * the `ListingImage` resource?
+
+  * the `Variations_*` resources?
+
+  * the `Category` resource?
+
+  * the `Shop` resource?
+
+* Identified for each:
+  * API endpoint
+
+  * required query params
+
+  * additional params needed (`fields`, `includes`)
+
+  * sample data returned
